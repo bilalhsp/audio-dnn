@@ -1,292 +1,0 @@
-gilbreth-c001.rcac.purdue.edu
-Total tasks: 4
-Total tasks per node: 4
-CPUs per task: 4
-CUDA visible devices: 0,1,2,3
-Number of nodes: 1
-SLURM_NODEID: 0
-The following modules were not unloaded:
-  (Use "module --force purge" to unload all):
-
-  1) xalt/1.1.2
-Process rank: 2
-Local rank: 2
-World size: 4
-num_proc        : 4
-num_tasks       : 4
-Process rank: 3
-Local rank: 3
-World size: 4
-num_proc        : 4
-num_tasks       : 4
-Process rank: 1
-Local rank: 1
-World size: 4
-num_proc        : 4
-num_tasks       : 4
-Process rank: 0
-Local rank: 0
-World size: 4
-num_proc        : 4
-num_tasks       : 4
-gilbreth-c001:68148:68148 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
-gilbreth-c001:68148:68148 [0] NCCL INFO Bootstrap : Using ib0:172.18.36.31<0>
-gilbreth-c001:68148:68148 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
-gilbreth-c001:68148:68148 [0] NCCL INFO cudaDriverVersion 12030
-NCCL version 2.20.5+cuda11.0
-gilbreth-c001:68148:68216 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
-gilbreth-c001:68148:68216 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.18.36.31<0>
-gilbreth-c001:68148:68216 [0] NCCL INFO Using non-device net plugin version 0
-gilbreth-c001:68148:68216 [0] NCCL INFO Using network IB
-gilbreth-c001:68149:68149 [1] NCCL INFO cudaDriverVersion 12030
-gilbreth-c001:68149:68149 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
-gilbreth-c001:68149:68149 [1] NCCL INFO Bootstrap : Using ib0:172.18.36.31<0>
-gilbreth-c001:68149:68149 [1] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
-gilbreth-c001:68150:68150 [2] NCCL INFO cudaDriverVersion 12030
-gilbreth-c001:68150:68150 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
-gilbreth-c001:68150:68150 [2] NCCL INFO Bootstrap : Using ib0:172.18.36.31<0>
-gilbreth-c001:68150:68150 [2] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
-gilbreth-c001:68151:68151 [3] NCCL INFO cudaDriverVersion 12030
-gilbreth-c001:68151:68151 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
-gilbreth-c001:68151:68151 [3] NCCL INFO Bootstrap : Using ib0:172.18.36.31<0>
-gilbreth-c001:68151:68151 [3] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
-gilbreth-c001:68150:68220 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
-gilbreth-c001:68150:68220 [2] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.18.36.31<0>
-gilbreth-c001:68150:68220 [2] NCCL INFO Using non-device net plugin version 0
-gilbreth-c001:68150:68220 [2] NCCL INFO Using network IB
-gilbreth-c001:68149:68222 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
-gilbreth-c001:68149:68222 [1] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.18.36.31<0>
-gilbreth-c001:68149:68222 [1] NCCL INFO Using non-device net plugin version 0
-gilbreth-c001:68149:68222 [1] NCCL INFO Using network IB
-gilbreth-c001:68151:68223 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
-gilbreth-c001:68151:68223 [3] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.18.36.31<0>
-gilbreth-c001:68151:68223 [3] NCCL INFO Using non-device net plugin version 0
-gilbreth-c001:68151:68223 [3] NCCL INFO Using network IB
-gilbreth-c001:68149:68222 [1] NCCL INFO comm 0x56132912fd20 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 62000 commId 0x200a510bbc3b4bfa - Init START
-gilbreth-c001:68148:68216 [0] NCCL INFO comm 0x55c30a17b4b0 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 61000 commId 0x200a510bbc3b4bfa - Init START
-gilbreth-c001:68150:68220 [2] NCCL INFO comm 0x56290f449be0 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId 89000 commId 0x200a510bbc3b4bfa - Init START
-gilbreth-c001:68151:68223 [3] NCCL INFO comm 0x560f4ca3f250 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId 8a000 commId 0x200a510bbc3b4bfa - Init START
-gilbreth-c001:68148:68216 [0] NCCL INFO Setting affinity for GPU 0 to 03ff
-gilbreth-c001:68149:68222 [1] NCCL INFO Setting affinity for GPU 1 to 03ff
-gilbreth-c001:68151:68223 [3] NCCL INFO Setting affinity for GPU 3 to 0ffc00
-gilbreth-c001:68150:68220 [2] NCCL INFO Setting affinity for GPU 2 to 0ffc00
-gilbreth-c001:68150:68220 [2] NCCL INFO comm 0x56290f449be0 rank 2 nRanks 4 nNodes 1 localRanks 4 localRank 2 MNNVL 0
-gilbreth-c001:68149:68222 [1] NCCL INFO comm 0x56132912fd20 rank 1 nRanks 4 nNodes 1 localRanks 4 localRank 1 MNNVL 0
-gilbreth-c001:68148:68216 [0] NCCL INFO comm 0x55c30a17b4b0 rank 0 nRanks 4 nNodes 1 localRanks 4 localRank 0 MNNVL 0
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 00/12 :    0   1   2   3
-gilbreth-c001:68151:68223 [3] NCCL INFO comm 0x560f4ca3f250 rank 3 nRanks 4 nNodes 1 localRanks 4 localRank 3 MNNVL 0
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 01/12 :    0   1   3   2
-gilbreth-c001:68150:68220 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1 [2] 1/-1/-1->2->0 [3] 1/-1/-1->2->0 [4] -1/-1/-1->2->3 [5] -1/-1/-1->2->3 [6] 3/-1/-1->2->1 [7] 3/-1/-1->2->1 [8] 1/-1/-1->2->0 [9] 1/-1/-1->2->0 [10] -1/-1/-1->2->3 [11] -1/-1/-1->2->3
-gilbreth-c001:68149:68222 [1] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] 2/-1/-1->1->0 [2] 3/-1/-1->1->2 [3] 3/-1/-1->1->2 [4] 0/-1/-1->1->-1 [5] 0/-1/-1->1->-1 [6] 2/-1/-1->1->0 [7] 2/-1/-1->1->0 [8] 3/-1/-1->1->2 [9] 3/-1/-1->1->2 [10] 0/-1/-1->1->-1 [11] 0/-1/-1->1->-1
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 02/12 :    0   2   3   1
-gilbreth-c001:68150:68220 [2] NCCL INFO P2P Chunksize set to 524288
-gilbreth-c001:68149:68222 [1] NCCL INFO P2P Chunksize set to 524288
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 03/12 :    0   2   1   3
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 04/12 :    0   3   1   2
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 05/12 :    0   3   2   1
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 06/12 :    0   1   2   3
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 07/12 :    0   1   3   2
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 08/12 :    0   2   3   1
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 09/12 :    0   2   1   3
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 10/12 :    0   3   1   2
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 11/12 :    0   3   2   1
-gilbreth-c001:68148:68216 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] 2/-1/-1->0->-1 [3] 2/-1/-1->0->-1 [4] 3/-1/-1->0->1 [5] 3/-1/-1->0->1 [6] 1/-1/-1->0->-1 [7] 1/-1/-1->0->-1 [8] 2/-1/-1->0->-1 [9] 2/-1/-1->0->-1 [10] 3/-1/-1->0->1 [11] 3/-1/-1->0->1
-gilbreth-c001:68148:68216 [0] NCCL INFO P2P Chunksize set to 524288
-gilbreth-c001:68151:68223 [3] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] -1/-1/-1->3->2 [2] -1/-1/-1->3->1 [3] -1/-1/-1->3->1 [4] 2/-1/-1->3->0 [5] 2/-1/-1->3->0 [6] -1/-1/-1->3->2 [7] -1/-1/-1->3->2 [8] -1/-1/-1->3->1 [9] -1/-1/-1->3->1 [10] 2/-1/-1->3->0 [11] 2/-1/-1->3->0
-gilbreth-c001:68151:68223 [3] NCCL INFO P2P Chunksize set to 524288
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 00/0 : 1[1] -> 2[2] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/IPC
-gilbreth-c001:68151:68223 [3] NCCL INFO Channel 00/0 : 3[3] -> 0[0] via P2P/IPC
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 04/0 : 1[1] -> 2[2] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 02/0 : 2[2] -> 3[3] via P2P/IPC
-gilbreth-c001:68151:68223 [3] NCCL INFO Channel 03/0 : 3[3] -> 0[0] via P2P/IPC
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 06/0 : 0[0] -> 1[1] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 06/0 : 1[1] -> 2[2] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 06/0 : 2[2] -> 3[3] via P2P/IPC
-gilbreth-c001:68151:68223 [3] NCCL INFO Channel 06/0 : 3[3] -> 0[0] via P2P/IPC
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 07/0 : 0[0] -> 1[1] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 10/0 : 1[1] -> 2[2] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 08/0 : 2[2] -> 3[3] via P2P/IPC
-gilbreth-c001:68151:68223 [3] NCCL INFO Channel 09/0 : 3[3] -> 0[0] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 01/0 : 1[1] -> 3[3] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 01/0 : 2[2] -> 0[0] via P2P/IPC
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 02/0 : 0[0] -> 2[2] via P2P/IPC
-gilbreth-c001:68151:68223 [3] NCCL INFO Channel 02/0 : 3[3] -> 1[1] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 03/0 : 1[1] -> 3[3] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 04/0 : 2[2] -> 0[0] via P2P/IPC
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 03/0 : 0[0] -> 2[2] via P2P/IPC
-gilbreth-c001:68151:68223 [3] NCCL INFO Channel 04/0 : 3[3] -> 1[1] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 07/0 : 1[1] -> 3[3] via P2P/IPC
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 08/0 : 0[0] -> 2[2] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 07/0 : 2[2] -> 0[0] via P2P/IPC
-gilbreth-c001:68151:68223 [3] NCCL INFO Channel 08/0 : 3[3] -> 1[1] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 09/0 : 1[1] -> 3[3] via P2P/IPC
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 09/0 : 0[0] -> 2[2] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 10/0 : 2[2] -> 0[0] via P2P/IPC
-gilbreth-c001:68151:68223 [3] NCCL INFO Channel 10/0 : 3[3] -> 1[1] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 02/0 : 1[1] -> 0[0] via P2P/IPC
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 04/0 : 0[0] -> 3[3] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 03/0 : 2[2] -> 1[1] via P2P/IPC
-gilbreth-c001:68151:68223 [3] NCCL INFO Channel 01/0 : 3[3] -> 2[2] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 05/0 : 1[1] -> 0[0] via P2P/IPC
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 05/0 : 0[0] -> 3[3] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 05/0 : 2[2] -> 1[1] via P2P/IPC
-gilbreth-c001:68151:68223 [3] NCCL INFO Channel 05/0 : 3[3] -> 2[2] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 08/0 : 1[1] -> 0[0] via P2P/IPC
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 10/0 : 0[0] -> 3[3] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 09/0 : 2[2] -> 1[1] via P2P/IPC
-gilbreth-c001:68151:68223 [3] NCCL INFO Channel 07/0 : 3[3] -> 2[2] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 11/0 : 1[1] -> 0[0] via P2P/IPC
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 11/0 : 0[0] -> 3[3] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 11/0 : 2[2] -> 1[1] via P2P/IPC
-gilbreth-c001:68151:68223 [3] NCCL INFO Channel 11/0 : 3[3] -> 2[2] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Connected all rings
-gilbreth-c001:68150:68220 [2] NCCL INFO Connected all rings
-gilbreth-c001:68148:68216 [0] NCCL INFO Connected all rings
-gilbreth-c001:68151:68223 [3] NCCL INFO Connected all rings
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 04/0 : 0[0] -> 1[1] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 01/0 : 1[1] -> 2[2] via P2P/IPC
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 05/0 : 0[0] -> 1[1] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 02/0 : 1[1] -> 2[2] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 01/0 : 2[2] -> 3[3] via P2P/IPC
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 10/0 : 0[0] -> 1[1] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 03/0 : 1[1] -> 2[2] via P2P/IPC
-gilbreth-c001:68151:68223 [3] NCCL INFO Channel 04/0 : 3[3] -> 0[0] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 04/0 : 2[2] -> 3[3] via P2P/IPC
-gilbreth-c001:68148:68216 [0] NCCL INFO Channel 11/0 : 0[0] -> 1[1] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 05/0 : 2[2] -> 3[3] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 07/0 : 1[1] -> 2[2] via P2P/IPC
-gilbreth-c001:68151:68223 [3] NCCL INFO Channel 05/0 : 3[3] -> 0[0] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 07/0 : 2[2] -> 3[3] via P2P/IPC
-gilbreth-c001:68151:68223 [3] NCCL INFO Channel 10/0 : 3[3] -> 0[0] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 08/0 : 1[1] -> 2[2] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 10/0 : 2[2] -> 3[3] via P2P/IPC
-gilbreth-c001:68151:68223 [3] NCCL INFO Channel 11/0 : 3[3] -> 0[0] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 09/0 : 1[1] -> 2[2] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 11/0 : 2[2] -> 3[3] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 02/0 : 2[2] -> 0[0] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 03/0 : 2[2] -> 0[0] via P2P/IPC
-gilbreth-c001:68151:68223 [3] NCCL INFO Channel 03/0 : 3[3] -> 1[1] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 02/0 : 1[1] -> 3[3] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 08/0 : 2[2] -> 0[0] via P2P/IPC
-gilbreth-c001:68151:68223 [3] NCCL INFO Channel 09/0 : 3[3] -> 1[1] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 09/0 : 2[2] -> 0[0] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 08/0 : 1[1] -> 3[3] via P2P/IPC
-gilbreth-c001:68151:68223 [3] NCCL INFO Channel 00/0 : 3[3] -> 2[2] via P2P/IPC
-gilbreth-c001:68151:68223 [3] NCCL INFO Channel 04/0 : 3[3] -> 2[2] via P2P/IPC
-gilbreth-c001:68151:68223 [3] NCCL INFO Channel 06/0 : 3[3] -> 2[2] via P2P/IPC
-gilbreth-c001:68151:68223 [3] NCCL INFO Channel 10/0 : 3[3] -> 2[2] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 00/0 : 2[2] -> 1[1] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 01/0 : 2[2] -> 1[1] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 02/0 : 2[2] -> 1[1] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 00/0 : 1[1] -> 0[0] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 06/0 : 2[2] -> 1[1] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 01/0 : 1[1] -> 0[0] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 07/0 : 2[2] -> 1[1] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 04/0 : 1[1] -> 0[0] via P2P/IPC
-gilbreth-c001:68150:68220 [2] NCCL INFO Channel 08/0 : 2[2] -> 1[1] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 06/0 : 1[1] -> 0[0] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 07/0 : 1[1] -> 0[0] via P2P/IPC
-gilbreth-c001:68149:68222 [1] NCCL INFO Channel 10/0 : 1[1] -> 0[0] via P2P/IPC
-gilbreth-c001:68148:68216 [0] NCCL INFO Connected all trees
-gilbreth-c001:68149:68222 [1] NCCL INFO Connected all trees
-gilbreth-c001:68149:68222 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
-gilbreth-c001:68149:68222 [1] NCCL INFO 12 coll channels, 0 collnet channels, 0 nvls channels, 16 p2p channels, 4 p2p channels per peer
-gilbreth-c001:68151:68223 [3] NCCL INFO Connected all trees
-gilbreth-c001:68148:68216 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
-gilbreth-c001:68148:68216 [0] NCCL INFO 12 coll channels, 0 collnet channels, 0 nvls channels, 16 p2p channels, 4 p2p channels per peer
-gilbreth-c001:68151:68223 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
-gilbreth-c001:68150:68220 [2] NCCL INFO Connected all trees
-gilbreth-c001:68151:68223 [3] NCCL INFO 12 coll channels, 0 collnet channels, 0 nvls channels, 16 p2p channels, 4 p2p channels per peer
-gilbreth-c001:68150:68220 [2] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
-gilbreth-c001:68150:68220 [2] NCCL INFO 12 coll channels, 0 collnet channels, 0 nvls channels, 16 p2p channels, 4 p2p channels per peer
-gilbreth-c001:68148:68216 [0] NCCL INFO comm 0x55c30a17b4b0 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 61000 commId 0x200a510bbc3b4bfa - Init COMPLETE
-gilbreth-c001:68150:68220 [2] NCCL INFO comm 0x56290f449be0 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId 89000 commId 0x200a510bbc3b4bfa - Init COMPLETE
-gilbreth-c001:68149:68222 [1] NCCL INFO comm 0x56132912fd20 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 62000 commId 0x200a510bbc3b4bfa - Init COMPLETE
-gilbreth-c001:68151:68223 [3] NCCL INFO comm 0x560f4ca3f250 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId 8a000 commId 0x200a510bbc3b4bfa - Init COMPLETE
-The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
-The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
-The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
-The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
-Token is valid (permission: fineGrained).
-Your token has been saved to /home/ahmedb/.cache/huggingface/token
-Login successful
-Login to hub successful...!
-Token is valid (permission: fineGrained).
-Your token has been saved to /home/ahmedb/.cache/huggingface/token
-Login successful
-Login to hub successful...!
-Token is valid (permission: fineGrained).
-Your token has been saved to /home/ahmedb/.cache/huggingface/token
-Login successful
-Login to hub successful...!
-Token is valid (permission: fineGrained).
-Your token has been saved to /home/ahmedb/.cache/huggingface/token
-Login successful
-Login to hub successful...!
-Detected kernel version 3.10.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
-Starting training...!
-Starting training...!
-Starting training...!
-Starting training...!
-  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:34<10:57, 34.59s/it]                                              {'loss': 1891.1467, 'grad_norm': nan, 'learning_rate': 0.0, 'epoch': 0.5}
-  5%|▌         | 1/20 [00:34<10:57, 34.59s/it]                                              {'eval_loss': 1854.0174926757813, 'eval_constrast_loss': 1825.0285949707031, 'eval_div_loss': 289.8891998291016, 'epoch': 0.5}
-  5%|▌         | 1/20 [01:18<10:57, 34.59s/it][rank3]:[W reducer.cpp:1389] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
-[rank1]:[W reducer.cpp:1389] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
-[rank2]:[W reducer.cpp:1389] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
-[rank0]:[W reducer.cpp:1389] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
- 10%|█         | 2/20 [01:30<14:05, 47.00s/it]                                              {'loss': 1851.8441, 'grad_norm': nan, 'learning_rate': 0.0, 'epoch': 1.0}
- 10%|█         | 2/20 [01:30<14:05, 47.00s/it]                                              {'eval_loss': 1788.1153747558594, 'eval_constrast_loss': 1759.9630981445312, 'eval_div_loss': 281.5225860595703, 'epoch': 1.0}
- 10%|█         | 2/20 [01:51<14:05, 47.00s/it]                                              {'eval_loss': 1715.5347595214844, 'eval_constrast_loss': 1688.4359558105468, 'eval_div_loss': 270.98805770874026, 'epoch': 1.0}
- 10%|█         | 2/20 [02:15<14:05, 47.00s/it] 15%|█▌        | 3/20 [02:33<15:26, 54.50s/it]                                              {'eval_loss': 1888.5253967285157, 'eval_constrast_loss': 1859.0341003417968, 'eval_div_loss': 294.9131103515625, 'epoch': 1.5}
- 15%|█▌        | 3/20 [02:55<15:26, 54.50s/it] 20%|██        | 4/20 [03:03<11:56, 44.76s/it]                                              {'loss': 1838.2993, 'grad_norm': nan, 'learning_rate': 0.0, 'epoch': 2.0}
- 20%|██        | 4/20 [03:03<11:56, 44.76s/it]                                              {'eval_loss': 1788.3393005371095, 'eval_constrast_loss': 1760.5556701660157, 'eval_div_loss': 277.83632507324216, 'epoch': 2.0}
- 20%|██        | 4/20 [03:24<11:56, 44.76s/it]                                              {'eval_loss': 1787.6005249023438, 'eval_constrast_loss': 1759.8403686523438, 'eval_div_loss': 277.60181732177733, 'epoch': 2.0}
- 20%|██        | 4/20 [03:48<11:56, 44.76s/it] 25%|██▌       | 5/20 [04:06<12:49, 51.31s/it]                                              {'eval_loss': 1783.0253601074219, 'eval_constrast_loss': 1755.3346557617188, 'eval_div_loss': 276.9070182800293, 'epoch': 2.5}
- 25%|██▌       | 5/20 [04:28<12:49, 51.31s/it] 30%|███       | 6/20 [04:42<10:43, 45.96s/it]                                              {'loss': 1837.6865, 'grad_norm': 311.8680114746094, 'learning_rate': 0.0001, 'epoch': 3.0}
- 30%|███       | 6/20 [04:42<10:43, 45.96s/it]                                              {'eval_loss': 1752.0867614746094, 'eval_constrast_loss': 1726.7380493164062, 'eval_div_loss': 253.48701400756835, 'epoch': 3.0}
- 30%|███       | 6/20 [05:06<10:43, 45.96s/it]                                              {'eval_loss': 1650.652197265625, 'eval_constrast_loss': 1627.06201171875, 'eval_div_loss': 235.90190582275392, 'epoch': 3.0}
- 30%|███       | 6/20 [05:32<10:43, 45.96s/it] 35%|███▌      | 7/20 [05:50<11:33, 53.33s/it]                                              {'eval_loss': 1814.0814331054687, 'eval_constrast_loss': 1787.9938232421875, 'eval_div_loss': 260.8759017944336, 'epoch': 3.5}
- 35%|███▌      | 7/20 [06:15<11:33, 53.33s/it] 40%|████      | 8/20 [06:23<09:23, 46.96s/it]                                              {'loss': 1892.7568, 'grad_norm': 369.4804382324219, 'learning_rate': 9.444444444444444e-05, 'epoch': 4.0}
- 40%|████      | 8/20 [06:23<09:23, 46.96s/it]                                              {'eval_loss': 1931.0189636230468, 'eval_constrast_loss': 1904.222149658203, 'eval_div_loss': 267.96809005737305, 'epoch': 4.0}
- 40%|████      | 8/20 [06:44<09:23, 46.96s/it]                                              {'eval_loss': 1664.5383361816407, 'eval_constrast_loss': 1641.0729064941406, 'eval_div_loss': 234.6542839050293, 'epoch': 4.0}
- 40%|████      | 8/20 [07:10<09:23, 46.96s/it] 45%|████▌     | 9/20 [07:27<09:35, 52.28s/it]                                              {'eval_loss': 1731.7734619140624, 'eval_constrast_loss': 1707.9235900878907, 'eval_div_loss': 238.49886245727538, 'epoch': 4.5}
- 45%|████▌     | 9/20 [07:49<09:35, 52.28s/it] 50%|█████     | 10/20 [07:58<07:36, 45.62s/it]                                               {'loss': 1767.5148, 'grad_norm': 118.61370086669922, 'learning_rate': 8.333333333333334e-05, 'epoch': 5.0}
- 50%|█████     | 10/20 [07:58<07:36, 45.62s/it]                                               {'eval_loss': 1856.6263671875, 'eval_constrast_loss': 1832.7254699707032, 'eval_div_loss': 239.00894088745116, 'epoch': 5.0}
- 50%|█████     | 10/20 [08:19<07:36, 45.62s/it]                                               {'eval_loss': 1701.2294982910157, 'eval_constrast_loss': 1679.17607421875, 'eval_div_loss': 220.53436965942382, 'epoch': 5.0}
- 50%|█████     | 10/20 [08:45<07:36, 45.62s/it] 55%|█████▌    | 11/20 [09:03<07:42, 51.44s/it]                                               {'eval_loss': 1723.1693786621095, 'eval_constrast_loss': 1701.4598999023438, 'eval_div_loss': 217.09465866088868, 'epoch': 5.5}
- 55%|█████▌    | 11/20 [09:25<07:42, 51.44s/it] 60%|██████    | 12/20 [09:36<06:07, 45.91s/it]                                               {'loss': 1828.7552, 'grad_norm': 88.23816680908203, 'learning_rate': 7.222222222222222e-05, 'epoch': 6.0}
- 60%|██████    | 12/20 [09:36<06:07, 45.91s/it]                                               {'eval_loss': 1917.9368774414063, 'eval_constrast_loss': 1895.2814453125, 'eval_div_loss': 226.55427017211915, 'epoch': 6.0}
- 60%|██████    | 12/20 [09:58<06:07, 45.91s/it]                                               {'eval_loss': 1726.5445556640625, 'eval_constrast_loss': 1705.7350219726563, 'eval_div_loss': 208.09555587768554, 'epoch': 6.0}
- 60%|██████    | 12/20 [10:30<06:07, 45.91s/it] 65%|██████▌   | 13/20 [10:47<06:15, 53.63s/it]                                               {'eval_loss': 1744.9605773925782, 'eval_constrast_loss': 1724.8846618652344, 'eval_div_loss': 200.7592803955078, 'epoch': 6.5}
- 65%|██████▌   | 13/20 [11:12<06:15, 53.63s/it] 70%|███████   | 14/20 [11:21<04:45, 47.59s/it]                                               {'loss': 1765.183, 'grad_norm': 77.21279907226562, 'learning_rate': 6.111111111111112e-05, 'epoch': 7.0}
- 70%|███████   | 14/20 [11:21<04:45, 47.59s/it]                                               {'eval_loss': 1837.1006469726562, 'eval_constrast_loss': 1816.407177734375, 'eval_div_loss': 206.93475570678712, 'epoch': 7.0}
- 70%|███████   | 14/20 [11:42<04:45, 47.59s/it]                                               {'eval_loss': 1725.1003479003907, 'eval_constrast_loss': 1705.193212890625, 'eval_div_loss': 199.0714599609375, 'epoch': 7.0}
- 70%|███████   | 14/20 [12:08<04:45, 47.59s/it] 75%|███████▌  | 15/20 [12:26<04:24, 52.91s/it]                                               {'eval_loss': 1830.7978271484376, 'eval_constrast_loss': 1810.7151794433594, 'eval_div_loss': 200.8267395019531, 'epoch': 7.5}
- 75%|███████▌  | 15/20 [12:47<04:24, 52.91s/it] 80%|████████  | 16/20 [12:58<03:05, 46.43s/it]                                               {'loss': 1837.5984, 'grad_norm': 78.46080017089844, 'learning_rate': 5e-05, 'epoch': 8.0}
- 80%|████████  | 16/20 [12:58<03:05, 46.43s/it]                                               {'eval_loss': 1726.3444702148438, 'eval_constrast_loss': 1706.7853149414063, 'eval_div_loss': 195.59159240722656, 'epoch': 8.0}
- 80%|████████  | 16/20 [13:20<03:05, 46.43s/it]                                               {'eval_loss': 1890.1589233398438, 'eval_constrast_loss': 1870.0262817382813, 'eval_div_loss': 201.32657699584962, 'epoch': 8.0}
- 80%|████████  | 16/20 [13:48<03:05, 46.43s/it] 85%|████████▌ | 17/20 [14:06<02:39, 53.03s/it]                                               {'eval_loss': 1786.100653076172, 'eval_constrast_loss': 1766.854510498047, 'eval_div_loss': 192.46149215698242, 'epoch': 8.5}
- 85%|████████▌ | 17/20 [14:27<02:39, 53.03s/it] 90%|█████████ | 18/20 [14:39<01:34, 47.05s/it]                                               {'loss': 1771.7815, 'grad_norm': 68.64905548095703, 'learning_rate': 3.888888888888889e-05, 'epoch': 9.0}
- 90%|█████████ | 18/20 [14:39<01:34, 47.05s/it]                                               {'eval_loss': 1767.0891906738282, 'eval_constrast_loss': 1748.3898132324218, 'eval_div_loss': 186.9940284729004, 'epoch': 9.0}
- 90%|█████████ | 18/20 [15:02<01:34, 47.05s/it]                                               {'eval_loss': 1925.3944519042968, 'eval_constrast_loss': 1905.6041198730468, 'eval_div_loss': 197.90338287353515, 'epoch': 9.0}
- 90%|█████████ | 18/20 [15:27<01:34, 47.05s/it] 95%|█████████▌| 19/20 [15:45<00:52, 52.57s/it]                                               {'eval_loss': 1679.4606079101563, 'eval_constrast_loss': 1661.4575439453124, 'eval_div_loss': 180.03077697753906, 'epoch': 9.5}
- 95%|█████████▌| 19/20 [16:10<00:52, 52.57s/it]100%|██████████| 20/20 [16:18<00:00, 46.93s/it]                                               {'loss': 1930.0905, 'grad_norm': 66.38644409179688, 'learning_rate': 2.777777777777778e-05, 'epoch': 10.0}
-100%|██████████| 20/20 [16:18<00:00, 46.93s/it]                                               {'eval_loss': 1793.215753173828, 'eval_constrast_loss': 1774.6876831054688, 'eval_div_loss': 185.28070297241212, 'epoch': 10.0}
-100%|██████████| 20/20 [16:40<00:00, 46.93s/it]                                               {'eval_loss': 1749.6619689941406, 'eval_constrast_loss': 1731.65595703125, 'eval_div_loss': 180.0602249145508, 'epoch': 10.0}
-100%|██████████| 20/20 [17:13<00:00, 46.93s/it]Could not locate the best model at /scratch/gilbreth/ahmedb/cache/huggingface/models/wav2vec2-audioset-natual-sounds-v8/checkpoint-15/pytorch_model.bin, if you are running a distributed training on multiple nodes, you should activate `--save_on_each_node`.
-Could not locate the best model at /scratch/gilbreth/ahmedb/cache/huggingface/models/wav2vec2-audioset-natual-sounds-v8/checkpoint-3/pytorch_model.bin, if you are running a distributed training on multiple nodes, you should activate `--save_on_each_node`.
-Could not locate the best model at /scratch/gilbreth/ahmedb/cache/huggingface/models/wav2vec2-audioset-natual-sounds-v8/checkpoint-15/pytorch_model.bin, if you are running a distributed training on multiple nodes, you should activate `--save_on_each_node`.
-Done training...!
-Done training...!
-Done training...!
-                                               {'train_runtime': 1033.4583, 'train_samples_per_second': 12.386, 'train_steps_per_second': 0.019, 'train_loss': 1834.116143798828, 'epoch': 10.0}
-100%|██████████| 20/20 [17:13<00:00, 46.93s/it]It took 17.3 min. to run.
-It took 17.3 min. to run.
-It took 17.3 min. to run.
-100%|██████████| 20/20 [17:13<00:00, 51.67s/it]
-events.out.tfevents.1722099764.gilbreth-c001.rcac.purdue.edu.68148.0:   0%|          | 0.00/15.3k [00:00<?, ?B/s]events.out.tfevents.1722099764.gilbreth-c001.rcac.purdue.edu.68148.0: 100%|██████████| 15.3k/15.3k [00:00<00:00, 116kB/s]
-Done training...!
-It took 17.4 min. to run.

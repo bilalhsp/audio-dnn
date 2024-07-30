@@ -1,79 +1,0 @@
-gilbreth-c002.rcac.purdue.edu
-Total tasks: 1
-Total tasks per node: 1
-CPUs per task: 2
-CUDA visible devices: 0,1,2,3
-Number of nodes: 1
-The following modules were not unloaded:
-  (Use "module --force purge" to unload all):
-
-  1) xalt/1.1.2
-Process rank: 0
-Local rank: 0
-World size: 1
-num_proc        : 2
-batch_size      : 16
-num_epochs      : 1
-gilbreth-c002:16890:16890 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
-gilbreth-c002:16890:16890 [0] NCCL INFO Bootstrap : Using ib0:172.18.36.32<0>
-gilbreth-c002:16890:16890 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
-gilbreth-c002:16890:16890 [0] NCCL INFO cudaDriverVersion 12030
-NCCL version 2.20.5+cuda11.0
-gilbreth-c002:16890:16927 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
-gilbreth-c002:16890:16927 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.18.36.32<0>
-gilbreth-c002:16890:16927 [0] NCCL INFO Using non-device net plugin version 0
-gilbreth-c002:16890:16927 [0] NCCL INFO Using network IB
-gilbreth-c002:16890:16927 [0] NCCL INFO comm 0x555932925b60 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId 61000 commId 0x4653d9dabc25ce6d - Init START
-gilbreth-c002:16890:16927 [0] NCCL INFO Setting affinity for GPU 0 to 03ff
-gilbreth-c002:16890:16927 [0] NCCL INFO comm 0x555932925b60 rank 0 nRanks 1 nNodes 1 localRanks 1 localRank 0 MNNVL 0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 00/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 01/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 02/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 03/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 04/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 05/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 06/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 07/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 08/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 09/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 10/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 11/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 12/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 13/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 14/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 15/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 16/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 17/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 18/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 19/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 20/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 21/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 22/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 23/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 24/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 25/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 26/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 27/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 28/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 29/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 30/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Channel 31/32 :    0
-gilbreth-c002:16890:16927 [0] NCCL INFO Trees [0] -1/-1/-1->0->-1 [1] -1/-1/-1->0->-1 [2] -1/-1/-1->0->-1 [3] -1/-1/-1->0->-1 [4] -1/-1/-1->0->-1 [5] -1/-1/-1->0->-1 [6] -1/-1/-1->0->-1 [7] -1/-1/-1->0->-1 [8] -1/-1/-1->0->-1 [9] -1/-1/-1->0->-1 [10] -1/-1/-1->0->-1 [11] -1/-1/-1->0->-1 [12] -1/-1/-1->0->-1 [13] -1/-1/-1->0->-1 [14] -1/-1/-1->0->-1 [15] -1/-1/-1->0->-1 [16] -1/-1/-1->0->-1 [17] -1/-1/-1->0->-1 [18] -1/-1/-1->0->-1 [19] -1/-1/-1->0->-1 [20] -1/-1/-1->0->-1 [21] -1/-1/-1->0->-1 [22] -1/-1/-1->0->-1 [23] -1/-1/-1->0->-1 [24] -1/-1/-1->0->-1 [25] -1/-1/-1->0->-1 [26] -1/-1/-1->0->-1 [27] -1/-1/-1->0->-1 [28] -1/-1/-1->0->-1 [29] -1/-1/-1->0->-1 [30] -1/-1/-1->0->-1 [31] -1/-1/-1->0->-1
-gilbreth-c002:16890:16927 [0] NCCL INFO P2P Chunksize set to 131072
-gilbreth-c002:16890:16927 [0] NCCL INFO Connected all rings
-gilbreth-c002:16890:16927 [0] NCCL INFO Connected all trees
-gilbreth-c002:16890:16927 [0] NCCL INFO 32 coll channels, 0 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
-gilbreth-c002:16890:16927 [0] NCCL INFO comm 0x555932925b60 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId 61000 commId 0x4653d9dabc25ce6d - Init COMPLETE
-The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
-Token is valid (permission: fineGrained).
-Your token has been saved to /home/ahmedb/.cache/huggingface/token
-Login successful
-Login to hub successful...!
-Detected kernel version 3.10.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
-Starting training...!
-  0%|          | 0/8 [00:00<?, ?it/s][rank0]:[W reducer.cpp:1389] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
- 12%|█▎        | 1/8 [00:28<03:16, 28.06s/it] 25%|██▌       | 2/8 [00:39<01:49, 18.27s/it] 38%|███▊      | 3/8 [00:39<00:50, 10.13s/it] 50%|█████     | 4/8 [00:51<00:42, 10.67s/it] 62%|██████▎   | 5/8 [00:51<00:20,  6.99s/it] 75%|███████▌  | 6/8 [00:52<00:09,  4.78s/it] 88%|████████▊ | 7/8 [00:52<00:03,  3.40s/it]100%|██████████| 8/8 [00:53<00:00,  2.49s/it]                                             {'eval_loss': 1965.5140228271484, 'eval_contrastive_loss': 1933.3789520263672, 'eval_diversity_loss': 321.3504829406738, 'epoch': 1.0}
-100%|██████████| 8/8 [01:12<00:00,  2.49s/it]                                             {'train_runtime': 75.9131, 'train_samples_per_second': 1.686, 'train_steps_per_second': 0.105, 'train_loss': 1680.478271484375, 'epoch': 1.0}
-100%|██████████| 8/8 [01:15<00:00,  2.49s/it]100%|██████████| 8/8 [01:15<00:00,  9.49s/it]
-Done training...!
-It took 1.5 min. to run.

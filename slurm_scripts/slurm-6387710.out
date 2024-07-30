@@ -1,75 +1,0 @@
-gilbreth-c002.rcac.purdue.edu
-Total tasks: 1
-Total tasks per node: 1
-CPUs per task: 4
-CUDA visible devices: 0,1,2,3
-Number of nodes: 1
-The following modules were not unloaded:
-  (Use "module --force purge" to unload all):
-
-  1) xalt/1.1.2
-Process rank: 0
-Local rank: 0
-World size: 1
-num_proc        : 4
-batch_size      : 16
-num_epochs      : 1
-gilbreth-c002:17740:17740 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
-gilbreth-c002:17740:17740 [0] NCCL INFO Bootstrap : Using ib0:172.18.36.32<0>
-gilbreth-c002:17740:17740 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
-gilbreth-c002:17740:17740 [0] NCCL INFO cudaDriverVersion 12030
-NCCL version 2.20.5+cuda11.0
-gilbreth-c002:17740:17771 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
-gilbreth-c002:17740:17771 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.18.36.32<0>
-gilbreth-c002:17740:17771 [0] NCCL INFO Using non-device net plugin version 0
-gilbreth-c002:17740:17771 [0] NCCL INFO Using network IB
-gilbreth-c002:17740:17771 [0] NCCL INFO comm 0x55e8631a48d0 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId 61000 commId 0xed87f1e52ad5232f - Init START
-gilbreth-c002:17740:17771 [0] NCCL INFO Setting affinity for GPU 0 to 03ff
-gilbreth-c002:17740:17771 [0] NCCL INFO comm 0x55e8631a48d0 rank 0 nRanks 1 nNodes 1 localRanks 1 localRank 0 MNNVL 0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 00/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 01/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 02/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 03/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 04/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 05/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 06/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 07/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 08/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 09/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 10/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 11/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 12/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 13/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 14/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 15/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 16/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 17/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 18/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 19/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 20/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 21/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 22/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 23/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 24/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 25/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 26/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 27/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 28/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 29/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 30/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Channel 31/32 :    0
-gilbreth-c002:17740:17771 [0] NCCL INFO Trees [0] -1/-1/-1->0->-1 [1] -1/-1/-1->0->-1 [2] -1/-1/-1->0->-1 [3] -1/-1/-1->0->-1 [4] -1/-1/-1->0->-1 [5] -1/-1/-1->0->-1 [6] -1/-1/-1->0->-1 [7] -1/-1/-1->0->-1 [8] -1/-1/-1->0->-1 [9] -1/-1/-1->0->-1 [10] -1/-1/-1->0->-1 [11] -1/-1/-1->0->-1 [12] -1/-1/-1->0->-1 [13] -1/-1/-1->0->-1 [14] -1/-1/-1->0->-1 [15] -1/-1/-1->0->-1 [16] -1/-1/-1->0->-1 [17] -1/-1/-1->0->-1 [18] -1/-1/-1->0->-1 [19] -1/-1/-1->0->-1 [20] -1/-1/-1->0->-1 [21] -1/-1/-1->0->-1 [22] -1/-1/-1->0->-1 [23] -1/-1/-1->0->-1 [24] -1/-1/-1->0->-1 [25] -1/-1/-1->0->-1 [26] -1/-1/-1->0->-1 [27] -1/-1/-1->0->-1 [28] -1/-1/-1->0->-1 [29] -1/-1/-1->0->-1 [30] -1/-1/-1->0->-1 [31] -1/-1/-1->0->-1
-gilbreth-c002:17740:17771 [0] NCCL INFO P2P Chunksize set to 131072
-gilbreth-c002:17740:17771 [0] NCCL INFO Connected all rings
-gilbreth-c002:17740:17771 [0] NCCL INFO Connected all trees
-gilbreth-c002:17740:17771 [0] NCCL INFO 32 coll channels, 0 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
-gilbreth-c002:17740:17771 [0] NCCL INFO comm 0x55e8631a48d0 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId 61000 commId 0xed87f1e52ad5232f - Init COMPLETE
-The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
-Token is valid (permission: fineGrained).
-Your token has been saved to /home/ahmedb/.cache/huggingface/token
-Login successful
-Login to hub successful...!
-Detected kernel version 3.10.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
-Starting training...!
-  0%|          | 0/17569 [00:00<?, ?it/s][rank0]:[W reducer.cpp:1389] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
-  0%|          | 1/17569 [00:22<109:59:55, 22.54s/it]  0%|          | 2/17569 [00:23<46:37:26,  9.55s/it]   0%|          | 3/17569 [00:23<26:19:39,  5.40s/it]  0%|          | 4/17569 [00:30<29:25:53,  6.03s/it]  0%|          | 5/17569 [00:31<19:46:53,  4.05s/it]  0%|          | 6/17569 [00:31<13:50:19,  2.84s/it]  0%|          | 7/17569 [00:32<10:11:03,  2.09s/it]  0%|          | 8/17569 [00:38<17:07:44,  3.51s/it]  0%|          | 9/17569 [00:39<12:49:55,  2.63s/it]  0%|          | 10/17569 [00:41<11:58:44,  2.46s/it]  0%|          | 11/17569 [00:41<9:00:50,  1.85s/it]   0%|          | 12/17569 [00:47<14:34:14,  2.99s/it]  0%|          | 13/17569 [00:49<13:12:11,  2.71s/it]  0%|          | 14/17569 [00:51<12:01:48,  2.47s/it]  0%|          | 15/17569 [00:51<9:05:59,  1.87s/it]   0%|          | 16/17569 [00:56<12:48:53,  2.63s/it]  0%|          | 17/17569 [00:58<12:36:33,  2.59s/it]  0%|          | 18/17569 [00:59<10:16:55,  2.11s/it]  0%|          | 19/17569 [01:00<7:52:05,  1.61s/it]   0%|          | 20/17569 [01:04<12:15:15,  2.51s/it]  0%|          | 21/17569 [01:08<14:22:36,  2.95s/it]  0%|          | 22/17569 [01:09<10:45:24,  2.21s/it]  0%|          | 23/17569 [01:10<8:46:05,  1.80s/it]   0%|          | 24/17569 [01:13<11:40:05,  2.39s/it]  0%|          | 25/17569 [01:17<12:54:07,  2.65s/it]  0%|          | 26/17569 [01:17<9:42:11,  1.99s/it]   0%|          | 27/17569 [01:18<7:40:37,  1.58s/it]  0%|          | 28/17569 [01:21<10:17:13,  2.11s/it]  0%|          | 29/17569 [01:24<11:31:15,  2.36s/it]  0%|          | 30/17569 [01:26<10:37:51,  2.18s/it]  0%|          | 31/17569 [01:27<8:33:47,  1.76s/it]   0%|          | 32/17569 [01:29<8:54:54,  1.83s/it]  0%|          | 33/17569 [01:32<12:00:55,  2.47s/it]  0%|          | 34/17569 [01:34<10:48:30,  2.22s/it]  0%|          | 35/17569 [01:35<8:59:23,  1.85s/it]   0%|          | 36/17569 [01:37<9:17:51,  1.91s/it]  0%|          | 37/17569 [01:41<11:59:21,  2.46s/it]  0%|          | 38/17569 [01:42<10:03:13,  2.06s/it]  0%|          | 39/17569 [01:43<8:09:25,  1.68s/it]   0%|          | 40/17569 [01:47<11:19:01,  2.32s/it]  0%|          | 41/17569 [01:50<13:21:15,  2.74s/it]  0%|          | 42/17569 [01:51<10:08:28,  2.08s/it]  0%|          | 43/17569 [01:51<7:45:28,  1.59s/it]   0%|          | 44/17569 [01:56<12:44:17,  2.62s/it]  0%|          | 45/17569 [02:00<13:52:33,  2.85s/it]  0%|          | 46/17569 [02:00<10:24:15,  2.14s/it]  0%|          | 47/17569 [02:01<7:58:36,  1.64s/it]   0%|          | 48/17569 [02:05<11:37:53,  2.39s/it]  0%|          | 49/17569 [02:09<13:54:44,  2.86s/it]  0%|          | 50/17569 [02:09<10:25:46,  2.14s/it]  0%|          | 51/17569 [02:10<7:58:20,  1.64s/it]   0%|          | 52/17569 [02:14<11:17:09,  2.32s/it]  0%|          | 53/17569 [02:18<14:00:57,  2.88s/it]  0%|          | 54/17569 [02:18<10:27:51,  2.15s/it]  0%|          | 55/17569 [02:19<8:00:59,  1.65s/it]   0%|          | 56/17569 [02:21<9:30:40,  1.96s/it]  0%|          | 57/17569 [02:27<14:06:32,  2.90s/it]  0%|          | 58/17569 [02:27<10:32:58,  2.17s/it]  0%|          | 59/17569 [02:27<8:02:34,  1.65s/it]   0%|          | 60/17569 [02:30<9:41:40,  1.99s/it]  0%|          | 61/17569 [02:34<12:33:33,  2.58s/it]  0%|          | 62/17569 [02:35<9:28:58,  1.95s/it]   0%|          | 63/17569 [02:35<7:19:41,  1.51s/it]  0%|          | 64/17569 [02:39<10:18:19,  2.12s/it]  0%|          | 65/17569 [02:44<15:15:05,  3.14s/it]  0%|          | 66/17569 [02:45<11:21:03,  2.33s/it]  0%|          | 67/17569 [02:45<8:37:24,  1.77s/it]   0%|          | 68/17569 [02:47<8:52:41,  1.83s/it]  0%|          | 69/17569 [02:51<12:35:32,  2.59s/it]  0%|          | 70/17569 [02:52<9:29:16,  1.95s/it]   0%|          | 71/17569 [02:52<7:18:52,  1.50s/it]  0%|          | 72/17569 [02:55<8:19:16,  1.71s/it]  0%|          | 73/17569 [02:59<12:09:08,  2.50s/it]  0%|          | 74/17569 [03:00<10:37:19,  2.19s/it]  0%|          | 75/17569 [03:01<8:30:41,  1.75s/it]   0%|          | 76/17569 [03:02<7:05:46,  1.46s/it]  0%|          | 77/17569 [03:07<12:27:24,  2.56s/it]  0%|          | 78/17569 [03:08<10:43:01,  2.21s/it]  0%|          | 79/17569 [03:09<8:14:55,  1.70s/it]   0%|          | 80/17569 [03:09<6:28:55,  1.33s/it]  0%|          | 81/17569 [03:15<12:50:28,  2.64s/it]  0%|          | 82/17569 [03:16<10:32:34,  2.17s/it]  0%|          | 83/17569 [03:17<9:13:13,  1.90s/it]   0%|          | 84/17569 [03:18<7:08:56,  1.47s/it]  0%|          | 85/17569 [03:22<11:37:28,  2.39s/it]  0%|          | 86/17569 [03:24<10:54:37,  2.25s/it]  0%|          | 87/17569 [03:26<9:37:31,  1.98s/it]   1%|          | 88/17569 [03:26<7:25:52,  1.53s/it]  1%|          | 89/17569 [03:30<11:16:03,  2.32s/it]  1%|          | 90/17569 [03:33<11:26:24,  2.36s/it]  1%|          | 91/17569 [03:33<8:39:18,  1.78s/it]   1%|          | 92/17569 [03:34<6:45:00,  1.39s/it]  1%|          | 93/17569 [03:38<11:41:53,  2.41s/it]  1%|          | 94/17569 [03:40<9:54:53,  2.04s/it]   1%|          | 95/17569 [03:40<7:36:39,  1.57s/it]  1%|          | 96/17569 [03:41<6:19:48,  1.30s/it]  1%|          | 97/17569 [03:46<12:14:22,  2.52s/it]  1%|          | 98/17569 [03:47<10:15:07,  2.11s/it]  1%|          | 99/17569 [03:48<8:46:33,  1.81s/it]   1%|          | 100/17569 [03:49<6:49:43,  1.41s/it]  1%|          | 101/17569 [03:54<11:47:03,  2.43s/it]  1%|          | 102/17569 [03:56<11:41:29,  2.41s/it]  1%|          | 103/17569 [03:57<8:52:38,  1.83s/it]   1%|          | 104/17569 [03:57<6:54:22,  1.42s/it]  1%|          | 105/17569 [04:01<11:14:57,  2.32s/it]  1%|          | 106/17569 [04:04<11:59:47,  2.47s/it]  1%|          | 107/17569 [04:05<9:04:43,  1.87s/it]   1%|          | 108/17569 [04:05<7:14:08,  1.49s/it]  1%|          | 109/17569 [04:09<10:03:44,  2.07s/it]  1%|          | 110/17569 [04:11<10:42:53,  2.21s/it]  1%|          | 111/17569 [04:12<8:09:07,  1.68s/it]   1%|          | 112/17569 [04:13<7:48:16,  1.61s/it]  1%|          | 113/17569 [04:17<11:21:16,  2.34s/it]  1%|          | 114/17569 [04:19<10:55:03,  2.25s/it]  1%|          | 115/17569 [04:20<9:06:24,  1.88s/it]   1%|          | 116/17569 [04:21<7:08:10,  1.47s/it]  1%|          | 117/17569 [04:26<11:50:10,  2.44s/it]  1%|          | 118/17569 [04:27<9:58:00,  2.06s/it]   1%|          | 119/17569 [04:28<8:38:02,  1.78s/it]  1%|          | 120/17569 [04:29<7:20:35,  1.52s/it]  1%|          | 121/17569 [04:33<11:13:59,  2.32s/it]  1%|          | 122/17569 [04:34<9:36:07,  1.98s/it]   1%|          | 123/17569 [04:35<7:27:15,  1.54s/it]  1%|          | 124/17569 [04:36<7:41:43,  1.59s/it]  1%|          | 125/17569 [04:40<10:43:33,  2.21s/it]  1%|          | 126/17569 [04:42<10:02:24,  2.07s/it]  1%|          | 127/17569 [04:42<7:43:16,  1.59s/it]   1%|          | 128/17569 [04:43<6:34:22,  1.36s/it]  1%|          | 129/17569 [04:47<10:37:59,  2.19s/it]  1%|          | 130/17569 [04:49<10:12:53,  2.11s/it]  1%|          | 131/17569 [04:50<8:50:15,  1.82s/it]   1%|          | 132/17569 [04:51<6:52:59,  1.42s/it]  1%|          | 133/17569 [04:54<9:25:06,  1.94s/it]  1%|          | 134/17569 [04:56<9:10:24,  1.89s/it]  1%|          | 135/17569 [04:57<8:49:33,  1.82s/it]  1%|          | 136/17569 [04:58<7:00:22,  1.45s/it]  1%|          | 137/17569 [05:01<9:26:25,  1.95s/it]  1%|          | 138/17569 [05:03<9:53:18,  2.04s/it]  1%|          | 139/17569 [05:05<9:54:37,  2.05s/it]  1%|          | 140/17569 [05:06<7:36:45,  1.57s/it]  1%|          | 141/17569 [05:07<7:24:00,  1.53s/it]  1%|          | 142/17569 [05:10<9:50:37,  2.03s/it]  1%|          | 143/17569 [05:13<10:43:01,  2.21s/it]  1%|          | 144/17569 [05:14<8:10:37,  1.69s/it]   1%|          | 145/17569 [05:15<7:17:15,  1.51s/it]  1%|          | 146/17569 [05:18<9:37:16,  1.99s/it]  1%|          | 147/17569 [05:20<9:52:46,  2.04s/it]  1%|          | 148/17569 [05:20<7:45:30,  1.60s/it]  1%|          | 149/17569 [05:22<7:47:04,  1.61s/it]  1%|          | 150/17569 [05:24<8:51:48,  1.83s/it]slurmstepd: error: *** JOB 6387710 ON gilbreth-c002 CANCELLED AT 2024-07-21T18:49:54 ***

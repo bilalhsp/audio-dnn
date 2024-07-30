@@ -1,241 +1,0 @@
-gilbreth-c002.rcac.purdue.edu
-Total tasks: 4
-Total tasks per node: 4
-CPUs per task: 2
-CUDA visible devices: 0,1,2,3
-Number of nodes: 1
-The following modules were not unloaded:
-  (Use "module --force purge" to unload all):
-
-  1) xalt/1.1.2
-num_proc        : 2
-Process rank: 0
-Local rank: 0
-World size: 4
-num_proc        : 2
-Process rank: 3
-Local rank: 3
-World size: 4
-num_proc        : 2
-Process rank: 1
-Local rank: 1
-World size: 4
-num_proc        : 2
-Process rank: 2
-Local rank: 2
-World size: 4
-gilbreth-c002:115929:115929 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
-gilbreth-c002:115929:115929 [0] NCCL INFO Bootstrap : Using ib0:172.18.36.32<0>
-gilbreth-c002:115929:115929 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
-gilbreth-c002:115929:115929 [0] NCCL INFO cudaDriverVersion 12030
-NCCL version 2.20.5+cuda11.0
-gilbreth-c002:115932:115932 [3] NCCL INFO cudaDriverVersion 12030
-gilbreth-c002:115932:115932 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
-gilbreth-c002:115932:115932 [3] NCCL INFO Bootstrap : Using ib0:172.18.36.32<0>
-gilbreth-c002:115932:115932 [3] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
-gilbreth-c002:115930:115930 [1] NCCL INFO cudaDriverVersion 12030
-gilbreth-c002:115930:115930 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
-gilbreth-c002:115930:115930 [1] NCCL INFO Bootstrap : Using ib0:172.18.36.32<0>
-gilbreth-c002:115930:115930 [1] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
-gilbreth-c002:115931:115931 [2] NCCL INFO cudaDriverVersion 12030
-gilbreth-c002:115931:115931 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
-gilbreth-c002:115931:115931 [2] NCCL INFO Bootstrap : Using ib0:172.18.36.32<0>
-gilbreth-c002:115931:115931 [2] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
-gilbreth-c002:115929:115993 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
-gilbreth-c002:115929:115993 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.18.36.32<0>
-gilbreth-c002:115929:115993 [0] NCCL INFO Using non-device net plugin version 0
-gilbreth-c002:115929:115993 [0] NCCL INFO Using network IB
-gilbreth-c002:115932:115999 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
-gilbreth-c002:115930:115998 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
-gilbreth-c002:115930:115998 [1] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.18.36.32<0>
-gilbreth-c002:115932:115999 [3] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.18.36.32<0>
-gilbreth-c002:115930:115998 [1] NCCL INFO Using non-device net plugin version 0
-gilbreth-c002:115930:115998 [1] NCCL INFO Using network IB
-gilbreth-c002:115932:115999 [3] NCCL INFO Using non-device net plugin version 0
-gilbreth-c002:115932:115999 [3] NCCL INFO Using network IB
-gilbreth-c002:115931:116004 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
-gilbreth-c002:115931:116004 [2] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.18.36.32<0>
-gilbreth-c002:115931:116004 [2] NCCL INFO Using non-device net plugin version 0
-gilbreth-c002:115931:116004 [2] NCCL INFO Using network IB
-gilbreth-c002:115929:115993 [0] NCCL INFO comm 0x561b07de4850 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 61000 commId 0x7bdb0a209a7da171 - Init START
-gilbreth-c002:115931:116004 [2] NCCL INFO comm 0x55b8666f42c0 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId 89000 commId 0x7bdb0a209a7da171 - Init START
-gilbreth-c002:115932:115999 [3] NCCL INFO comm 0x55cd8f160ff0 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId 8a000 commId 0x7bdb0a209a7da171 - Init START
-gilbreth-c002:115930:115998 [1] NCCL INFO comm 0x5618c5527230 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 62000 commId 0x7bdb0a209a7da171 - Init START
-gilbreth-c002:115931:116004 [2] NCCL INFO Setting affinity for GPU 2 to 0ffc00
-gilbreth-c002:115929:115993 [0] NCCL INFO Setting affinity for GPU 0 to 03ff
-gilbreth-c002:115932:115999 [3] NCCL INFO Setting affinity for GPU 3 to 0ffc00
-gilbreth-c002:115930:115998 [1] NCCL INFO Setting affinity for GPU 1 to 03ff
-gilbreth-c002:115929:115993 [0] NCCL INFO comm 0x561b07de4850 rank 0 nRanks 4 nNodes 1 localRanks 4 localRank 0 MNNVL 0
-gilbreth-c002:115931:116004 [2] NCCL INFO comm 0x55b8666f42c0 rank 2 nRanks 4 nNodes 1 localRanks 4 localRank 2 MNNVL 0
-gilbreth-c002:115932:115999 [3] NCCL INFO comm 0x55cd8f160ff0 rank 3 nRanks 4 nNodes 1 localRanks 4 localRank 3 MNNVL 0
-gilbreth-c002:115930:115998 [1] NCCL INFO comm 0x5618c5527230 rank 1 nRanks 4 nNodes 1 localRanks 4 localRank 1 MNNVL 0
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 00/12 :    0   1   2   3
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 01/12 :    0   1   3   2
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 02/12 :    0   2   3   1
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 03/12 :    0   2   1   3
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 04/12 :    0   3   1   2
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 05/12 :    0   3   2   1
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 06/12 :    0   1   2   3
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 07/12 :    0   1   3   2
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 08/12 :    0   2   3   1
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 09/12 :    0   2   1   3
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 10/12 :    0   3   1   2
-gilbreth-c002:115931:116004 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1 [2] 1/-1/-1->2->0 [3] 1/-1/-1->2->0 [4] -1/-1/-1->2->3 [5] -1/-1/-1->2->3 [6] 3/-1/-1->2->1 [7] 3/-1/-1->2->1 [8] 1/-1/-1->2->0 [9] 1/-1/-1->2->0 [10] -1/-1/-1->2->3 [11] -1/-1/-1->2->3
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 11/12 :    0   3   2   1
-gilbreth-c002:115931:116004 [2] NCCL INFO P2P Chunksize set to 524288
-gilbreth-c002:115932:115999 [3] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] -1/-1/-1->3->2 [2] -1/-1/-1->3->1 [3] -1/-1/-1->3->1 [4] 2/-1/-1->3->0 [5] 2/-1/-1->3->0 [6] -1/-1/-1->3->2 [7] -1/-1/-1->3->2 [8] -1/-1/-1->3->1 [9] -1/-1/-1->3->1 [10] 2/-1/-1->3->0 [11] 2/-1/-1->3->0
-gilbreth-c002:115932:115999 [3] NCCL INFO P2P Chunksize set to 524288
-gilbreth-c002:115930:115998 [1] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] 2/-1/-1->1->0 [2] 3/-1/-1->1->2 [3] 3/-1/-1->1->2 [4] 0/-1/-1->1->-1 [5] 0/-1/-1->1->-1 [6] 2/-1/-1->1->0 [7] 2/-1/-1->1->0 [8] 3/-1/-1->1->2 [9] 3/-1/-1->1->2 [10] 0/-1/-1->1->-1 [11] 0/-1/-1->1->-1
-gilbreth-c002:115929:115993 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] 2/-1/-1->0->-1 [3] 2/-1/-1->0->-1 [4] 3/-1/-1->0->1 [5] 3/-1/-1->0->1 [6] 1/-1/-1->0->-1 [7] 1/-1/-1->0->-1 [8] 2/-1/-1->0->-1 [9] 2/-1/-1->0->-1 [10] 3/-1/-1->0->1 [11] 3/-1/-1->0->1
-gilbreth-c002:115929:115993 [0] NCCL INFO P2P Chunksize set to 524288
-gilbreth-c002:115930:115998 [1] NCCL INFO P2P Chunksize set to 524288
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/IPC
-gilbreth-c002:115932:115999 [3] NCCL INFO Channel 00/0 : 3[3] -> 0[0] via P2P/IPC
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 00/0 : 1[1] -> 2[2] via P2P/IPC
-gilbreth-c002:115932:115999 [3] NCCL INFO Channel 03/0 : 3[3] -> 0[0] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 02/0 : 2[2] -> 3[3] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 04/0 : 1[1] -> 2[2] via P2P/IPC
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/IPC
-gilbreth-c002:115932:115999 [3] NCCL INFO Channel 06/0 : 3[3] -> 0[0] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 06/0 : 2[2] -> 3[3] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 06/0 : 1[1] -> 2[2] via P2P/IPC
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 06/0 : 0[0] -> 1[1] via P2P/IPC
-gilbreth-c002:115932:115999 [3] NCCL INFO Channel 09/0 : 3[3] -> 0[0] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 08/0 : 2[2] -> 3[3] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 10/0 : 1[1] -> 2[2] via P2P/IPC
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 07/0 : 0[0] -> 1[1] via P2P/IPC
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 02/0 : 0[0] -> 2[2] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 01/0 : 2[2] -> 0[0] via P2P/IPC
-gilbreth-c002:115932:115999 [3] NCCL INFO Channel 02/0 : 3[3] -> 1[1] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 01/0 : 1[1] -> 3[3] via P2P/IPC
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 03/0 : 0[0] -> 2[2] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 04/0 : 2[2] -> 0[0] via P2P/IPC
-gilbreth-c002:115932:115999 [3] NCCL INFO Channel 04/0 : 3[3] -> 1[1] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 03/0 : 1[1] -> 3[3] via P2P/IPC
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 08/0 : 0[0] -> 2[2] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 07/0 : 2[2] -> 0[0] via P2P/IPC
-gilbreth-c002:115932:115999 [3] NCCL INFO Channel 08/0 : 3[3] -> 1[1] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 07/0 : 1[1] -> 3[3] via P2P/IPC
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 09/0 : 0[0] -> 2[2] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 10/0 : 2[2] -> 0[0] via P2P/IPC
-gilbreth-c002:115932:115999 [3] NCCL INFO Channel 10/0 : 3[3] -> 1[1] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 09/0 : 1[1] -> 3[3] via P2P/IPC
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 04/0 : 0[0] -> 3[3] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 03/0 : 2[2] -> 1[1] via P2P/IPC
-gilbreth-c002:115932:115999 [3] NCCL INFO Channel 01/0 : 3[3] -> 2[2] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 02/0 : 1[1] -> 0[0] via P2P/IPC
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 05/0 : 0[0] -> 3[3] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 05/0 : 2[2] -> 1[1] via P2P/IPC
-gilbreth-c002:115932:115999 [3] NCCL INFO Channel 05/0 : 3[3] -> 2[2] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 05/0 : 1[1] -> 0[0] via P2P/IPC
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 10/0 : 0[0] -> 3[3] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 09/0 : 2[2] -> 1[1] via P2P/IPC
-gilbreth-c002:115932:115999 [3] NCCL INFO Channel 07/0 : 3[3] -> 2[2] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 08/0 : 1[1] -> 0[0] via P2P/IPC
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 11/0 : 0[0] -> 3[3] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 11/0 : 2[2] -> 1[1] via P2P/IPC
-gilbreth-c002:115932:115999 [3] NCCL INFO Channel 11/0 : 3[3] -> 2[2] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 11/0 : 1[1] -> 0[0] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Connected all rings
-gilbreth-c002:115929:115993 [0] NCCL INFO Connected all rings
-gilbreth-c002:115932:115999 [3] NCCL INFO Connected all rings
-gilbreth-c002:115930:115998 [1] NCCL INFO Connected all rings
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 04/0 : 0[0] -> 1[1] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 01/0 : 1[1] -> 2[2] via P2P/IPC
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 05/0 : 0[0] -> 1[1] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 02/0 : 1[1] -> 2[2] via P2P/IPC
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 10/0 : 0[0] -> 1[1] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 03/0 : 1[1] -> 2[2] via P2P/IPC
-gilbreth-c002:115932:115999 [3] NCCL INFO Channel 04/0 : 3[3] -> 0[0] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 01/0 : 2[2] -> 3[3] via P2P/IPC
-gilbreth-c002:115929:115993 [0] NCCL INFO Channel 11/0 : 0[0] -> 1[1] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 07/0 : 1[1] -> 2[2] via P2P/IPC
-gilbreth-c002:115932:115999 [3] NCCL INFO Channel 05/0 : 3[3] -> 0[0] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 04/0 : 2[2] -> 3[3] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 08/0 : 1[1] -> 2[2] via P2P/IPC
-gilbreth-c002:115932:115999 [3] NCCL INFO Channel 10/0 : 3[3] -> 0[0] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 05/0 : 2[2] -> 3[3] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 09/0 : 1[1] -> 2[2] via P2P/IPC
-gilbreth-c002:115932:115999 [3] NCCL INFO Channel 11/0 : 3[3] -> 0[0] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 07/0 : 2[2] -> 3[3] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 10/0 : 2[2] -> 3[3] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 11/0 : 2[2] -> 3[3] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 02/0 : 2[2] -> 0[0] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 03/0 : 2[2] -> 0[0] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 02/0 : 1[1] -> 3[3] via P2P/IPC
-gilbreth-c002:115932:115999 [3] NCCL INFO Channel 03/0 : 3[3] -> 1[1] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 08/0 : 2[2] -> 0[0] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 08/0 : 1[1] -> 3[3] via P2P/IPC
-gilbreth-c002:115932:115999 [3] NCCL INFO Channel 09/0 : 3[3] -> 1[1] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 09/0 : 2[2] -> 0[0] via P2P/IPC
-gilbreth-c002:115932:115999 [3] NCCL INFO Channel 00/0 : 3[3] -> 2[2] via P2P/IPC
-gilbreth-c002:115932:115999 [3] NCCL INFO Channel 04/0 : 3[3] -> 2[2] via P2P/IPC
-gilbreth-c002:115932:115999 [3] NCCL INFO Channel 06/0 : 3[3] -> 2[2] via P2P/IPC
-gilbreth-c002:115932:115999 [3] NCCL INFO Channel 10/0 : 3[3] -> 2[2] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 00/0 : 2[2] -> 1[1] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 01/0 : 2[2] -> 1[1] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 00/0 : 1[1] -> 0[0] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 02/0 : 2[2] -> 1[1] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 01/0 : 1[1] -> 0[0] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 06/0 : 2[2] -> 1[1] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 04/0 : 1[1] -> 0[0] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 07/0 : 2[2] -> 1[1] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 06/0 : 1[1] -> 0[0] via P2P/IPC
-gilbreth-c002:115931:116004 [2] NCCL INFO Channel 08/0 : 2[2] -> 1[1] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 07/0 : 1[1] -> 0[0] via P2P/IPC
-gilbreth-c002:115930:115998 [1] NCCL INFO Channel 10/0 : 1[1] -> 0[0] via P2P/IPC
-gilbreth-c002:115932:115999 [3] NCCL INFO Connected all trees
-gilbreth-c002:115929:115993 [0] NCCL INFO Connected all trees
-gilbreth-c002:115932:115999 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
-gilbreth-c002:115932:115999 [3] NCCL INFO 12 coll channels, 0 collnet channels, 0 nvls channels, 16 p2p channels, 4 p2p channels per peer
-gilbreth-c002:115929:115993 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
-gilbreth-c002:115929:115993 [0] NCCL INFO 12 coll channels, 0 collnet channels, 0 nvls channels, 16 p2p channels, 4 p2p channels per peer
-gilbreth-c002:115931:116004 [2] NCCL INFO Connected all trees
-gilbreth-c002:115931:116004 [2] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
-gilbreth-c002:115931:116004 [2] NCCL INFO 12 coll channels, 0 collnet channels, 0 nvls channels, 16 p2p channels, 4 p2p channels per peer
-gilbreth-c002:115930:115998 [1] NCCL INFO Connected all trees
-gilbreth-c002:115930:115998 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
-gilbreth-c002:115930:115998 [1] NCCL INFO 12 coll channels, 0 collnet channels, 0 nvls channels, 16 p2p channels, 4 p2p channels per peer
-gilbreth-c002:115930:115998 [1] NCCL INFO comm 0x5618c5527230 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 62000 commId 0x7bdb0a209a7da171 - Init COMPLETE
-gilbreth-c002:115929:115993 [0] NCCL INFO comm 0x561b07de4850 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 61000 commId 0x7bdb0a209a7da171 - Init COMPLETE
-gilbreth-c002:115931:116004 [2] NCCL INFO comm 0x55b8666f42c0 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId 89000 commId 0x7bdb0a209a7da171 - Init COMPLETE
-gilbreth-c002:115932:115999 [3] NCCL INFO comm 0x55cd8f160ff0 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId 8a000 commId 0x7bdb0a209a7da171 - Init COMPLETE
-The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
-The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
-The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
-The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
-Token is valid (permission: fineGrained).
-Your token has been saved to /home/ahmedb/.cache/huggingface/token
-Login successful
-Login to hub successful...!
-Token is valid (permission: fineGrained).
-Your token has been saved to /home/ahmedb/.cache/huggingface/token
-Login successful
-Login to hub successful...!
-Token is valid (permission: fineGrained).
-Your token has been saved to /home/ahmedb/.cache/huggingface/token
-Login successful
-Login to hub successful...!
-Token is valid (permission: fineGrained).
-Your token has been saved to /home/ahmedb/.cache/huggingface/token
-Login successful
-Login to hub successful...!
-/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py:1494: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
-  warnings.warn(
-/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py:1494: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
-  warnings.warn(
-/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py:1494: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
-  warnings.warn(
-/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py:1494: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
-  warnings.warn(
-Detected kernel version 3.10.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
-Starting training...!
-Starting training...!
-Starting training...!
-Starting training...!
-  0%|          | 0/4393 [00:00<?, ?it/s][rank0]:[W reducer.cpp:1389] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
-[rank3]:[W reducer.cpp:1389] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
-[rank2]:[W reducer.cpp:1389] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
-[rank1]:[W reducer.cpp:1389] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
-  0%|          | 1/4393 [00:20<24:48:24, 20.33s/it]  0%|          | 2/4393 [00:28<16:24:55, 13.46s/it]  0%|          | 3/4393 [00:29<9:10:24,  7.52s/it]   0%|          | 4/4393 [00:38<9:49:24,  8.06s/it]  0%|          | 5/4393 [00:38<6:29:06,  5.32s/it]  0%|          | 6/4393 [00:46<7:39:50,  6.29s/it]  0%|          | 7/4393 [00:47<5:20:56,  4.39s/it]  0%|          | 8/4393 [00:55<6:55:42,  5.69s/it]  0%|          | 9/4393 [00:56<4:56:18,  4.06s/it]  0%|          | 10/4393 [01:05<6:40:28,  5.48s/it]  0%|          | 11/4393 [01:05<4:48:44,  3.95s/it]  0%|          | 12/4393 [01:13<6:25:49,  5.28s/it]  0%|          | 13/4393 [01:14<4:39:33,  3.83s/it]  0%|          | 14/4393 [01:22<6:22:33,  5.24s/it]  0%|          | 15/4393 [01:24<5:00:31,  4.12s/it]  0%|          | 16/4393 [01:30<5:54:45,  4.86s/it]  0%|          | 17/4393 [01:32<4:41:51,  3.86s/it]  0%|          | 18/4393 [01:40<6:05:24,  5.01s/it]  0%|          | 19/4393 [01:41<4:42:59,  3.88s/it]  0%|          | 20/4393 [01:49<6:14:00,  5.13s/it]  0%|          | 21/4393 [01:51<5:09:53,  4.25s/it]  1%|          | 22/4393 [01:58<6:08:07,  5.05s/it]  1%|          | 23/4393 [01:59<4:44:17,  3.90s/it]  1%|          | 24/4393 [02:07<6:13:55,  5.14s/it]  1%|          | 25/4393 [02:08<4:33:06,  3.75s/it]  1%|          | 26/4393 [02:17<6:24:55,  5.29s/it]  1%|          | 27/4393 [02:17<4:39:53,  3.85s/it]  1%|          | 28/4393 [02:25<6:04:52,  5.02s/it]  1%|          | 29/4393 [02:25<4:25:40,  3.65s/it]  1%|          | 30/4393 [02:34<6:02:44,  4.99s/it]  1%|          | 31/4393 [02:34<4:24:43,  3.64s/it]  1%|          | 32/4393 [02:43<6:20:22,  5.23s/it]  1%|          | 33/4393 [02:43<4:36:25,  3.80s/it]  1%|          | 34/4393 [02:52<6:14:32,  5.16s/it]  1%|          | 35/4393 [02:52<4:32:37,  3.75s/it]  1%|          | 36/4393 [03:00<5:50:29,  4.83s/it]  1%|          | 37/4393 [03:01<4:35:15,  3.79s/it]  1%|          | 38/4393 [03:08<5:38:57,  4.67s/it]  1%|          | 39/4393 [03:09<4:34:48,  3.79s/it]  1%|          | 40/4393 [03:16<5:40:40,  4.70s/it]  1%|          | 41/4393 [03:18<4:33:31,  3.77s/it]  1%|          | 42/4393 [03:25<5:56:15,  4.91s/it]  1%|          | 43/4393 [03:26<4:19:20,  3.58s/it]  1%|          | 44/4393 [03:34<6:01:46,  4.99s/it]  1%|          | 45/4393 [03:35<4:23:32,  3.64s/it]  1%|          | 46/4393 [03:42<5:44:24,  4.75s/it]  1%|          | 47/4393 [03:42<4:11:21,  3.47s/it]  1%|          | 48/4393 [03:50<5:33:00,  4.60s/it]  1%|          | 49/4393 [03:50<4:03:30,  3.36s/it]  1%|          | 50/4393 [03:58<5:42:34,  4.73s/it]  1%|          | 51/4393 [03:59<4:12:51,  3.49s/it]  1%|          | 52/4393 [04:06<5:29:19,  4.55s/it]  1%|          | 53/4393 [04:08<4:30:24,  3.74s/it]  1%|          | 54/4393 [04:14<5:24:43,  4.49s/it]  1%|▏         | 55/4393 [04:17<4:48:37,  3.99s/it]  1%|▏         | 56/4393 [04:22<5:14:52,  4.36s/it]  1%|▏         | 57/4393 [04:25<4:40:28,  3.88s/it]  1%|▏         | 58/4393 [04:30<5:20:15,  4.43s/it]  1%|▏         | 59/4393 [04:33<4:33:59,  3.79s/it]  1%|▏         | 60/4393 [04:39<5:38:20,  4.69s/it]  1%|▏         | 61/4393 [04:41<4:34:26,  3.80s/it]  1%|▏         | 62/4393 [04:48<5:39:07,  4.70s/it]  1%|▏         | 63/4393 [04:49<4:13:45,  3.52s/it]  1%|▏         | 64/4393 [04:57<5:51:02,  4.87s/it]  1%|▏         | 65/4393 [04:57<4:16:15,  3.55s/it]  2%|▏         | 66/4393 [05:05<5:40:32,  4.72s/it]  2%|▏         | 67/4393 [05:05<4:08:38,  3.45s/it]  2%|▏         | 68/4393 [05:13<5:37:09,  4.68s/it]  2%|▏         | 69/4393 [05:13<4:08:20,  3.45s/it]  2%|▏         | 70/4393 [05:21<5:32:40,  4.62s/it]  2%|▏         | 71/4393 [05:21<4:04:23,  3.39s/it]  2%|▏         | 72/4393 [05:29<5:34:55,  4.65s/it]  2%|▏         | 73/4393 [05:29<4:06:06,  3.42s/it]  2%|▏         | 74/4393 [05:36<5:22:32,  4.48s/it]  2%|▏         | 75/4393 [05:37<3:56:34,  3.29s/it]  2%|▏         | 76/4393 [05:44<5:24:19,  4.51s/it]  2%|▏         | 77/4393 [05:46<4:26:13,  3.70s/it]  2%|▏         | 78/4393 [05:52<5:18:57,  4.44s/it]  2%|▏         | 79/4393 [05:55<4:36:42,  3.85s/it]  2%|▏         | 80/4393 [06:00<5:21:03,  4.47s/it]  2%|▏         | 81/4393 [06:03<4:44:02,  3.95s/it]  2%|▏         | 82/4393 [06:09<5:22:31,  4.49s/it]  2%|▏         | 83/4393 [06:11<4:24:29,  3.68s/it]  2%|▏         | 84/4393 [06:17<5:12:08,  4.35s/it]  2%|▏         | 85/4393 [06:17<3:57:10,  3.30s/it]  2%|▏         | 86/4393 [06:25<5:29:25,  4.59s/it]  2%|▏         | 87/4393 [06:26<4:00:44,  3.35s/it]  2%|▏         | 88/4393 [06:32<5:02:12,  4.21s/it]  2%|▏         | 89/4393 [06:33<4:04:56,  3.41s/it]  2%|▏         | 90/4393 [06:39<5:04:29,  4.25s/it]  2%|▏         | 91/4393 [06:41<4:06:01,  3.43s/it]  2%|▏         | 92/4393 [06:47<4:55:45,  4.13s/it]  2%|▏         | 93/4393 [06:49<4:04:26,  3.41s/it]  2%|▏         | 94/4393 [06:54<4:39:53,  3.91s/it]  2%|▏         | 95/4393 [06:56<4:16:34,  3.58s/it]  2%|▏         | 96/4393 [07:02<5:06:52,  4.28s/it]  2%|▏         | 97/4393 [07:06<4:46:26,  4.00s/it]  2%|▏         | 98/4393 [07:10<4:45:05,  3.98s/it]  2%|▏         | 99/4393 [07:13<4:26:00,  3.72s/it]  2%|▏         | 100/4393 [07:18<4:53:53,  4.11s/it]  2%|▏         | 101/4393 [07:20<4:11:21,  3.51s/it]  2%|▏         | 102/4393 [07:25<4:49:06,  4.04s/it]  2%|▏         | 103/4393 [07:27<4:04:25,  3.42s/it]  2%|▏         | 104/4393 [07:32<4:40:47,  3.93s/it]  2%|▏         | 105/4393 [07:35<4:10:27,  3.50s/it]  2%|▏         | 106/4393 [07:39<4:33:29,  3.83s/it]  2%|▏         | 107/4393 [07:42<4:05:51,  3.44s/it]  2%|▏         | 108/4393 [07:47<4:35:10,  3.85s/it]  2%|▏         | 109/4393 [07:50<4:24:49,  3.71s/it]  3%|▎         | 110/4393 [07:55<4:55:25,  4.14s/it]  3%|▎         | 111/4393 [07:58<4:21:14,  3.66s/it]  3%|▎         | 112/4393 [08:05<5:36:41,  4.72s/it]  3%|▎         | 113/4393 [08:06<4:22:18,  3.68s/it]  3%|▎         | 114/4393 [08:13<5:30:29,  4.63s/it]  3%|▎         | 115/4393 [08:16<4:45:23,  4.00s/it]  3%|▎         | 116/4393 [08:21<5:22:59,  4.53s/it]  3%|▎         | 117/4393 [08:23<4:21:37,  3.67s/it]  3%|▎         | 118/4393 [08:29<5:18:05,  4.46s/it]  3%|▎         | 119/4393 [08:30<3:52:58,  3.27s/it]  3%|▎         | 120/4393 [08:37<5:14:57,  4.42s/it]  3%|▎         | 121/4393 [08:37<3:49:58,  3.23s/it]  3%|▎         | 122/4393 [08:44<5:05:58,  4.30s/it]  3%|▎         | 123/4393 [08:46<4:07:12,  3.47s/it]  3%|▎         | 124/4393 [08:51<4:55:41,  4.16s/it]  3%|▎         | 125/4393 [08:54<4:13:33,  3.56s/it]  3%|▎         | 126/4393 [08:59<4:53:39,  4.13s/it]  3%|▎         | 127/4393 [09:01<4:16:00,  3.60s/it]  3%|▎         | 128/4393 [09:07<5:06:27,  4.31s/it]  3%|▎         | 129/4393 [09:09<4:00:58,  3.39s/it]  3%|▎         | 130/4393 [09:16<5:28:00,  4.62s/it]  3%|▎         | 131/4393 [09:18<4:32:13,  3.83s/it]  3%|▎         | 132/4393 [09:23<5:01:12,  4.24s/it]  3%|▎         | 133/4393 [09:25<4:15:23,  3.60s/it]  3%|▎         | 134/4393 [09:31<4:47:14,  4.05s/it]  3%|▎         | 135/4393 [09:33<4:13:30,  3.57s/it]  3%|▎         | 136/4393 [09:38<4:34:45,  3.87s/it]  3%|▎         | 137/4393 [09:41<4:22:06,  3.70s/it]  3%|▎         | 138/4393 [09:45<4:35:23,  3.88s/it]  3%|▎         | 139/4393 [09:49<4:24:45,  3.73s/it]  3%|▎         | 140/4393 [09:52<4:19:15,  3.66s/it]  3%|▎         | 141/4393 [09:56<4:31:46,  3.83s/it]  3%|▎         | 142/4393 [09:59<4:13:36,  3.58s/it]  3%|▎         | 143/4393 [10:04<4:38:11,  3.93s/it]  3%|▎         | 144/4393 [10:06<3:58:11,  3.36s/it]  3%|▎         | 145/4393 [10:12<4:55:24,  4.17s/it]  3%|▎         | 146/4393 [10:13<3:48:00,  3.22s/it]  3%|▎         | 147/4393 [10:19<4:46:57,  4.05s/it]  3%|▎         | 148/4393 [10:20<3:40:30,  3.12s/it]  3%|▎         | 149/4393 [10:26<4:43:05,  4.00s/it]  3%|▎         | 150/4393 [10:27<3:47:30,  3.22s/it]  3%|▎         | 151/4393 [10:34<4:52:20,  4.13s/it]  3%|▎         | 152/4393 [10:35<3:49:52,  3.25s/it]  3%|▎         | 153/4393 [10:41<4:49:30,  4.10s/it]  4%|▎         | 154/4393 [10:43<4:00:02,  3.40s/it]  4%|▎         | 155/4393 [10:48<4:33:26,  3.87s/it]  4%|▎         | 156/4393 [10:50<4:06:13,  3.49s/it]  4%|▎         | 157/4393 [10:55<4:24:14,  3.74s/it]  4%|▎         | 158/4393 [10:57<4:01:22,  3.42s/it]  4%|▎         | 159/4393 [11:02<4:33:57,  3.88s/it]  4%|▎         | 160/4393 [11:05<4:04:06,  3.46s/it]  4%|▎         | 161/4393 [11:09<4:26:35,  3.78s/it]  4%|▎         | 162/4393 [11:12<4:07:14,  3.51s/it]  4%|▎         | 163/4393 [11:16<4:07:56,  3.52s/it]  4%|▎         | 164/4393 [11:21<4:35:52,  3.91s/it]  4%|▍         | 165/4393 [11:23<4:04:49,  3.47s/it]  4%|▍         | 166/4393 [11:29<4:50:06,  4.12s/it]  4%|▍         | 167/4393 [11:30<4:00:33,  3.42s/it]  4%|▍         | 168/4393 [11:36<4:49:23,  4.11s/it]  4%|▍         | 169/4393 [11:38<4:06:13,  3.50s/it]  4%|▍         | 170/4393 [11:43<4:33:33,  3.89s/it]  4%|▍         | 171/4393 [11:46<4:10:37,  3.56s/it]  4%|▍         | 172/4393 [11:50<4:18:16,  3.67s/it]  4%|▍         | 173/4393 [11:54<4:20:42,  3.71s/it]  4%|▍         | 174/4393 [11:56<4:03:39,  3.47s/it]  4%|▍         | 175/4393 [12:01<4:30:18,  3.85s/it]  4%|▍         | 176/4393 [12:04<4:02:43,  3.45s/it]  4%|▍         | 177/4393 [12:08<4:23:29,  3.75s/it]  4%|▍         | 178/4393 [12:11<3:56:06,  3.36s/it]  4%|▍         | 179/4393 [12:15<4:15:19,  3.64s/it]  4%|▍         | 180/4393 [12:18<4:07:37,  3.53s/it]  4%|▍         | 181/4393 [12:23<4:26:28,  3.80s/it]  4%|▍         | 182/4393 [12:25<3:49:19,  3.27s/it]  4%|▍         | 183/4393 [12:29<4:18:00,  3.68s/it]  4%|▍         | 184/4393 [12:31<3:32:02,  3.02s/it]  4%|▍         | 185/4393 [12:37<4:40:37,  4.00s/it]  4%|▍         | 186/4393 [12:37<3:26:31,  2.95s/it]  4%|▍         | 187/4393 [12:45<5:04:52,  4.35s/it]  4%|▍         | 188/4393 [12:46<3:43:02,  3.18s/it]  4%|▍         | 189/4393 [12:52<4:51:53,  4.17s/it]  4%|▍         | 190/4393 [12:52<3:33:57,  3.05s/it]  4%|▍         | 191/4393 [12:59<4:38:37,  3.98s/it]  4%|▍         | 192/4393 [13:01<4:05:23,  3.50s/it]  4%|▍         | 193/4393 [13:06<4:28:48,  3.84s/it]  4%|▍         | 194/4393 [13:08<3:59:16,  3.42s/it]  4%|▍         | 195/4393 [13:14<4:49:17,  4.13s/it]  4%|▍         | 196/4393 [13:16<4:00:42,  3.44s/it]  4%|▍         | 197/4393 [13:21<4:39:15,  3.99s/it]  5%|▍         | 198/4393 [13:23<4:03:08,  3.48s/it]  5%|▍         | 199/4393 [13:28<4:39:49,  4.00s/it]  5%|▍         | 200/4393 [13:32<4:22:48,  3.76s/it]  5%|▍         | 201/4393 [13:36<4:28:50,  3.85s/it]  5%|▍         | 202/4393 [13:39<4:23:18,  3.77s/it]  5%|▍         | 203/4393 [13:43<4:21:30,  3.74s/it]  5%|▍         | 204/4393 [13:47<4:25:54,  3.81s/it]  5%|▍         | 205/4393 [13:50<4:15:50,  3.67s/it]  5%|▍         | 206/4393 [13:55<4:30:21,  3.87s/it]  5%|▍         | 207/4393 [13:58<4:24:58,  3.80s/it]  5%|▍         | 208/4393 [14:03<4:39:47,  4.01s/it]  5%|▍         | 209/4393 [14:05<4:12:16,  3.62s/it]  5%|▍         | 210/4393 [14:11<4:44:05,  4.07s/it]  5%|▍         | 211/4393 [14:14<4:19:03,  3.72s/it]  5%|▍         | 212/4393 [14:18<4:29:32,  3.87s/it]  5%|▍         | 213/4393 [14:21<4:08:56,  3.57s/it]  5%|▍         | 214/4393 [14:25<4:34:43,  3.94s/it]  5%|▍         | 215/4393 [14:28<4:05:48,  3.53s/it]  5%|▍         | 216/4393 [14:33<4:29:44,  3.87s/it]  5%|▍         | 217/4393 [14:35<3:59:04,  3.43s/it]  5%|▍         | 218/4393 [14:39<4:17:08,  3.70s/it]  5%|▍         | 219/4393 [14:43<4:07:59,  3.56s/it]  5%|▌         | 220/4393 [14:46<4:08:43,  3.58s/it]  5%|▌         | 221/4393 [14:50<4:16:21,  3.69s/it]  5%|▌         | 222/4393 [14:54<4:25:46,  3.82s/it]  5%|▌         | 223/4393 [14:57<4:00:40,  3.46s/it]  5%|▌         | 224/4393 [15:01<4:19:14,  3.73s/it]  5%|▌         | 225/4393 [15:05<4:08:00,  3.57s/it]  5%|▌         | 226/4393 [15:09<4:21:12,  3.76s/it]  5%|▌         | 227/4393 [15:11<3:52:31,  3.35s/it]  5%|▌         | 228/4393 [15:17<4:36:22,  3.98s/it]  5%|▌         | 229/4393 [15:20<4:19:02,  3.73s/it]  5%|▌         | 230/4393 [15:24<4:23:53,  3.80s/it]  5%|▌         | 231/4393 [15:27<4:10:14,  3.61s/it]  5%|▌         | 232/4393 [15:31<4:15:31,  3.68s/it]  5%|▌         | 233/4393 [15:34<4:12:55,  3.65s/it]  5%|▌         | 234/4393 [15:38<4:11:34,  3.63s/it]  5%|▌         | 235/4393 [15:42<4:12:24,  3.64s/it]  5%|▌         | 236/4393 [15:45<4:17:55,  3.72s/it]  5%|▌         | 237/4393 [15:49<4:13:04,  3.65s/it]  5%|▌         | 238/4393 [15:52<3:51:03,  3.34s/it]  5%|▌         | 239/4393 [15:56<4:19:52,  3.75s/it]  5%|▌         | 240/4393 [15:59<4:02:59,  3.51s/it]  5%|▌         | 241/4393 [16:04<4:21:29,  3.78s/it]  6%|▌         | 242/4393 [16:06<4:01:38,  3.49s/it]  6%|▌         | 243/4393 [16:12<4:52:41,  4.23s/it]  6%|▌         | 244/4393 [16:13<3:36:44,  3.13s/it]  6%|▌         | 245/4393 [16:20<4:58:29,  4.32s/it]  6%|▌         | 246/4393 [16:21<3:38:46,  3.17s/it]  6%|▌         | 247/4393 [16:27<4:46:08,  4.14s/it]  6%|▌         | 248/4393 [16:27<3:29:37,  3.03s/it]  6%|▌         | 249/4393 [16:35<5:11:07,  4.50s/it]  6%|▌         | 250/4393 [16:36<3:47:27,  3.29s/it]  6%|▌         | 251/4393 [16:42<4:55:58,  4.29s/it]  6%|▌         | 252/4393 [16:43<3:37:19,  3.15s/it]  6%|▌         | 253/4393 [16:50<5:06:52,  4.45s/it]  6%|▌         | 254/4393 [16:51<3:54:53,  3.41s/it]  6%|▌         | 255/4393 [16:59<5:15:32,  4.58s/it]  6%|▌         | 256/4393 [16:59<3:51:39,  3.36s/it]  6%|▌         | 257/4393 [17:05<4:43:40,  4.12s/it]  6%|▌         | 258/4393 [17:06<3:47:51,  3.31s/it]  6%|▌         | 259/4393 [17:12<4:37:15,  4.02s/it]  6%|▌         | 260/4393 [17:14<3:44:54,  3.27s/it]  6%|▌         | 261/4393 [17:20<4:42:30,  4.10s/it]  6%|▌         | 262/4393 [17:21<3:40:31,  3.20s/it]  6%|▌         | 263/4393 [17:27<4:43:18,  4.12s/it]  6%|▌         | 264/4393 [17:28<3:34:44,  3.12s/it]  6%|▌         | 265/4393 [17:34<4:29:04,  3.91s/it]  6%|▌         | 266/4393 [17:35<3:40:33,  3.21s/it]  6%|▌         | 267/4393 [17:41<4:38:40,  4.05s/it]  6%|▌         | 268/4393 [17:43<3:48:41,  3.33s/it]  6%|▌         | 269/4393 [17:48<4:24:24,  3.85s/it]  6%|▌         | 270/4393 [17:50<3:58:19,  3.47s/it]  6%|▌         | 271/4393 [17:56<4:49:33,  4.21s/it]  6%|▌         | 272/4393 [17:58<4:02:00,  3.52s/it]  6%|▌         | 273/4393 [18:04<4:43:33,  4.13s/it]  6%|▌         | 274/4393 [18:06<4:01:35,  3.52s/it]  6%|▋         | 275/4393 [18:11<4:34:34,  4.00s/it]  6%|▋         | 276/4393 [18:13<3:49:22,  3.34s/it]  6%|▋         | 277/4393 [18:18<4:29:32,  3.93s/it]  6%|▋         | 278/4393 [18:21<3:56:06,  3.44s/it]  6%|▋         | 279/4393 [18:26<4:29:59,  3.94s/it]  6%|▋         | 280/4393 [18:27<3:46:08,  3.30s/it]  6%|▋         | 281/4393 [18:33<4:32:40,  3.98s/it]  6%|▋         | 282/4393 [18:34<3:38:29,  3.19s/it]  6%|▋         | 283/4393 [18:40<4:30:00,  3.94s/it]  6%|▋         | 284/4393 [18:42<3:58:02,  3.48s/it]  6%|▋         | 285/4393 [18:48<4:35:08,  4.02s/it]  7%|▋         | 286/4393 [18:50<3:51:25,  3.38s/it]  7%|▋         | 287/4393 [18:56<4:48:42,  4.22s/it]  7%|▋         | 288/4393 [18:59<4:19:06,  3.79s/it]  7%|▋         | 289/4393 [19:03<4:25:35,  3.88s/it]  7%|▋         | 290/4393 [19:05<3:53:02,  3.41s/it]  7%|▋         | 291/4393 [19:09<4:15:29,  3.74s/it]  7%|▋         | 292/4393 [19:12<3:40:44,  3.23s/it]  7%|▋         | 293/4393 [19:17<4:34:38,  4.02s/it]  7%|▋         | 294/4393 [19:18<3:26:26,  3.02s/it]  7%|▋         | 295/4393 [19:24<4:27:16,  3.91s/it]  7%|▋         | 296/4393 [19:25<3:27:21,  3.04s/it]  7%|▋         | 297/4393 [19:32<4:37:56,  4.07s/it]  7%|▋         | 298/4393 [19:32<3:24:33,  3.00s/it]  7%|▋         | 299/4393 [19:39<4:36:41,  4.05s/it]  7%|▋         | 300/4393 [19:39<3:23:04,  2.98s/it]  7%|▋         | 301/4393 [19:46<4:47:53,  4.22s/it]  7%|▋         | 302/4393 [19:47<3:31:26,  3.10s/it]  7%|▋         | 303/4393 [19:54<4:58:36,  4.38s/it]  7%|▋         | 304/4393 [19:54<3:38:34,  3.21s/it]  7%|▋         | 305/4393 [20:02<5:09:00,  4.54s/it]  7%|▋         | 306/4393 [20:03<3:45:33,  3.31s/it]  7%|▋         | 307/4393 [20:10<5:03:24,  4.46s/it]  7%|▋         | 308/4393 [20:10<3:41:34,  3.25s/it]  7%|▋         | 309/4393 [20:17<4:55:50,  4.35s/it]  7%|▋         | 310/4393 [20:18<3:37:15,  3.19s/it]  7%|▋         | 311/4393 [20:24<4:38:59,  4.10s/it]  7%|▋         | 312/4393 [20:25<3:39:31,  3.23s/it]  7%|▋         | 313/4393 [20:31<4:35:15,  4.05s/it]  7%|▋         | 314/4393 [20:32<3:43:12,  3.28s/it]  7%|▋         | 315/4393 [20:39<4:41:20,  4.14s/it]  7%|▋         | 316/4393 [20:40<3:44:22,  3.30s/it]  7%|▋         | 317/4393 [20:46<4:33:40,  4.03s/it]  7%|▋         | 318/4393 [20:49<4:18:50,  3.81s/it]  7%|▋         | 319/4393 [20:53<4:32:37,  4.02s/it]  7%|▋         | 320/4393 [20:56<4:09:46,  3.68s/it]  7%|▋         | 321/4393 [21:01<4:26:29,  3.93s/it]  7%|▋         | 322/4393 [21:04<4:06:16,  3.63s/it]  7%|▋         | 323/4393 [21:08<4:22:54,  3.88s/it]  7%|▋         | 324/4393 [21:11<4:02:25,  3.57s/it]  7%|▋         | 325/4393 [21:15<4:16:25,  3.78s/it]  7%|▋         | 326/4393 [21:19<4:04:21,  3.61s/it]  7%|▋         | 327/4393 [21:23<4:19:13,  3.83s/it]  7%|▋         | 328/4393 [21:26<4:07:12,  3.65s/it]  7%|▋         | 329/4393 [21:30<4:13:50,  3.75s/it]  8%|▊         | 330/4393 [21:33<3:54:14,  3.46s/it]  8%|▊         | 331/4393 [21:37<4:09:57,  3.69s/it]  8%|▊         | 332/4393 [21:39<3:41:23,  3.27s/it]  8%|▊         | 333/4393 [21:45<4:24:09,  3.90s/it]  8%|▊         | 334/4393 [21:47<3:47:53,  3.37s/it]  8%|▊         | 335/4393 [21:53<4:41:05,  4.16s/it]  8%|▊         | 336/4393 [21:54<3:33:56,  3.16s/it]  8%|▊         | 337/4393 [22:00<4:43:24,  4.19s/it]  8%|▊         | 338/4393 [22:02<3:46:28,  3.35s/it]  8%|▊         | 339/4393 [22:08<4:36:17,  4.09s/it]  8%|▊         | 340/4393 [22:10<3:54:00,  3.46s/it]  8%|▊         | 341/4393 [22:15<4:43:15,  4.19s/it]  8%|▊         | 342/4393 [22:16<3:36:19,  3.20s/it]  8%|▊         | 343/4393 [22:23<4:37:41,  4.11s/it]  8%|▊         | 344/4393 [22:23<3:26:19,  3.06s/it]  8%|▊         | 345/4393 [22:30<4:52:43,  4.34s/it]  8%|▊         | 346/4393 [22:31<3:39:09,  3.25s/it]  8%|▊         | 347/4393 [22:37<4:40:39,  4.16s/it]  8%|▊         | 348/4393 [22:40<3:59:21,  3.55s/it]  8%|▊         | 349/4393 [22:45<4:31:15,  4.02s/it]  8%|▊         | 350/4393 [22:48<4:10:49,  3.72s/it]  8%|▊         | 351/4393 [22:51<4:06:57,  3.67s/it]  8%|▊         | 352/4393 [22:55<4:08:51,  3.69s/it]  8%|▊         | 353/4393 [22:58<3:57:37,  3.53s/it]  8%|▊         | 354/4393 [23:02<4:13:40,  3.77s/it]  8%|▊         | 355/4393 [23:05<3:49:09,  3.41s/it]  8%|▊         | 356/4393 [23:09<4:04:26,  3.63s/it]  8%|▊         | 357/4393 [23:13<4:04:51,  3.64s/it]  8%|▊         | 358/4393 [23:16<4:03:43,  3.62s/it]  8%|▊         | 359/4393 [23:22<4:45:55,  4.25s/it]  8%|▊         | 360/4393 [23:25<4:14:24,  3.78s/it]  8%|▊         | 361/4393 [23:29<4:24:31,  3.94s/it]  8%|▊         | 362/4393 [23:32<4:05:25,  3.65s/it]  8%|▊         | 363/4393 [23:37<4:30:25,  4.03s/it]  8%|▊         | 364/4393 [23:40<4:13:54,  3.78s/it]  8%|▊         | 365/4393 [23:45<4:31:53,  4.05s/it]  8%|▊         | 366/4393 [23:47<3:53:54,  3.49s/it]  8%|▊         | 367/4393 [23:51<4:09:52,  3.72s/it]  8%|▊         | 368/4393 [23:53<3:34:54,  3.20s/it]  8%|▊         | 369/4393 [23:59<4:27:58,  4.00s/it]  8%|▊         | 370/4393 [24:00<3:30:59,  3.15s/it]  8%|▊         | 371/4393 [24:07<4:33:54,  4.09s/it]  8%|▊         | 372/4393 [24:08<3:34:05,  3.19s/it]  8%|▊         | 373/4393 [24:14<4:43:15,  4.23s/it]  9%|▊         | 374/4393 [24:15<3:29:50,  3.13s/it]  9%|▊         | 375/4393 [24:22<4:45:20,  4.26s/it]slurmstepd: error: *** JOB 6387017 ON gilbreth-c002 CANCELLED AT 2024-07-21T14:48:30 ***
