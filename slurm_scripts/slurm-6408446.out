@@ -1,0 +1,77 @@
+gilbreth-c001.rcac.purdue.edu
+Total tasks: 4
+Total tasks per node: 4
+CPUs per task: 4
+CUDA visible devices: 0,1,2,3
+Number of nodes: 1
+SLURM_NODEID: 0
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/1.1.2
+Traceback (most recent call last):
+  File "../scripts/pretrain_wav2vec2.py", line 13, in <module>
+Traceback (most recent call last):
+  File "../scripts/pretrain_wav2vec2.py", line 13, in <module>
+    from audio_data import utils
+ModuleNotFoundError: No module named 'audio_data'
+    from audio_data import utils
+ModuleNotFoundError: No module named 'audio_data'
+Traceback (most recent call last):
+  File "../scripts/pretrain_wav2vec2.py", line 13, in <module>
+    from audio_data import utils
+ModuleNotFoundError: No module named 'audio_data'
+Traceback (most recent call last):
+  File "../scripts/pretrain_wav2vec2.py", line 13, in <module>
+    from audio_data import utils
+ModuleNotFoundError: No module named 'audio_data'
+E0727 13:38:45.683528 47274498354880 torch/distributed/elastic/multiprocessing/api.py:826] failed (exitcode: 1) local_rank: 0 (pid: 77417) of binary: /home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/bin/python
+Traceback (most recent call last):
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/run.py", line 879, in main
+    run(args)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/run.py", line 870, in run
+    elastic_launch(
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 132, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 263, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+../scripts/pretrain_wav2vec2.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-07-27_13:38:45
+  host      : gilbreth-c001.rcac.purdue.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 77418)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2024-07-27_13:38:45
+  host      : gilbreth-c001.rcac.purdue.edu
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 77419)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2024-07-27_13:38:45
+  host      : gilbreth-c001.rcac.purdue.edu
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 77420)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-07-27_13:38:45
+  host      : gilbreth-c001.rcac.purdue.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 77417)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

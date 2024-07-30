@@ -1,0 +1,69 @@
+gilbreth-c001.rcac.purdue.edu
+Total tasks: 4
+Total tasks per node: 4
+CPUs per task: 4
+CUDA visible devices: 0,1,2,3
+Number of nodes: 1
+SLURM_NODEID: 0
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/1.1.2
+usage: pretrain_wav2vec2.py [-h] [-n NUM_PROC] [-t NUM_TASKS]
+usage: pretrain_wav2vec2.py [-h] [-n NUM_PROC] [-t NUM_TASKS]
+pretrain_wav2vec2.py: error: unrecognized arguments: -e 5
+pretrain_wav2vec2.py: error: unrecognized arguments: -e 5
+usage: pretrain_wav2vec2.py [-h] [-n NUM_PROC] [-t NUM_TASKS]
+pretrain_wav2vec2.py: error: unrecognized arguments: -e 5
+usage: pretrain_wav2vec2.py [-h] [-n NUM_PROC] [-t NUM_TASKS]
+pretrain_wav2vec2.py: error: unrecognized arguments: -e 5
+E0727 12:39:47.343417 47088791174848 torch/distributed/elastic/multiprocessing/api.py:826] failed (exitcode: 2) local_rank: 0 (pid: 61724) of binary: /home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/bin/python
+Traceback (most recent call last):
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/run.py", line 879, in main
+    run(args)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/run.py", line 870, in run
+    elastic_launch(
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 132, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 263, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+../scripts/pretrain_wav2vec2.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-07-27_12:39:47
+  host      : gilbreth-c001.rcac.purdue.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 2 (pid: 61725)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2024-07-27_12:39:47
+  host      : gilbreth-c001.rcac.purdue.edu
+  rank      : 2 (local_rank: 2)
+  exitcode  : 2 (pid: 61726)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2024-07-27_12:39:47
+  host      : gilbreth-c001.rcac.purdue.edu
+  rank      : 3 (local_rank: 3)
+  exitcode  : 2 (pid: 61727)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-07-27_12:39:47
+  host      : gilbreth-c001.rcac.purdue.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 2 (pid: 61724)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

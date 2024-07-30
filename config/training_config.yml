@@ -1,0 +1,51 @@
+model_name: wav2vec2
+dataset: "audioset-natual-sounds"
+version: "v3"
+local_output_dir: "/scratch/gilbreth/ahmedb/cache/huggingface/models/"
+hf_token_path: /home/ahmedb/.cache/huggingface/token
+num_of_examples_to_accumulate: 640 # corresponds to 1.8 hours of data
+
+# trainingArgument parameters..
+gradient_checkpointing: False
+group_by_length: False
+num_train_epochs: 100   # 100 equals around 43000 updates
+max_steps: 50000        # over-rides 'num_train_epochs'
+batch_size: 16
+fp16: True
+
+# optimizer 
+learning_rate: 5.e-4
+weight_decay: 0.01  # from fairseq
+adam_epsilon: 1.e-6 # from fairseq
+adam_beta1: 0.9     # from fairseq
+adam_beta2: 0.98    # from fairseq
+
+# lr_schedular...
+# warmup_steps: 32000              # number of warmup steps for learning rate scheduler
+warmup_ratio: 0.08
+lr_scheduler_type: 'polynomial'    # using polynomial decay scheduler
+
+
+# logging and saving 
+logging_first_step: True
+logging_strategy: steps
+logging_steps: 500
+save_strategy: steps
+save_steps: 500
+eval_strategy: steps
+eval_steps: 500
+
+save_total_limit: 2
+report_to: 
+  - tensorboard
+load_best_model_at_end: True
+metric_for_best_model: constrast_loss #loss
+greater_is_better: False
+
+# hub repo settings..
+push_to_hub: True
+hub_private_repo: True  # Make the repo private
+
+# multi-gpu training config
+ddp_find_unused_parameters: True
+ddp_backend: nccl

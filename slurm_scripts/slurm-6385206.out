@@ -1,0 +1,46 @@
+Cache directory for huggingface datasets:
+/scratch/gilbreth/ahmedb/cache/huggingface/datasets/cache
+gilbreth-n000.rcac.purdue.edu
+total tasks: 
+1
+total tasks per node: 
+1
+cpus per task: 
+8
+Cuda visible devices
+0
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/1.1.2
+/usr/bin/uuidgen: /home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/libuuid.so.1: no version information available (required by /usr/bin/uuidgen)
+training        : False
+num_proc        : 8
+preprocess      : False
+Filtering out sequences shorter than 5 sec.
+Filter (num_proc=8):   0%|          | 0/8491 [00:00<?, ? examples/s]Filter (num_proc=8):   0%|          | 0/8491 [01:00<?, ? examples/s]
+Traceback (most recent call last):
+  File "../scripts/preprocess_dataset.py", line 86, in <module>
+    preprocess_audioset(args)
+  File "../scripts/preprocess_dataset.py", line 44, in preprocess_audioset
+    dataset = processor.filter_short_sequences(dataset, num_proc=num_proc)
+  File "/home/ahmedb/projects/Wav2Letter/audio-processing/audio_dnn/preprocessor.py", line 51, in filter_short_sequences
+    dataset = dataset.filter(
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 567, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/datasets/fingerprint.py", line 482, in wrapper
+    out = func(dataset, *args, **kwargs)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 3714, in filter
+    indices = self.map(
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 602, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 567, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 3253, in map
+    for rank, done, content in iflatmap_unordered(
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/datasets/utils/py_utils.py", line 711, in iflatmap_unordered
+    raise RuntimeError(
+RuntimeError: One of the subprocesses has abruptly died during map operation.To debug the error, disable multiprocessing.
+slurmstepd: error: Detected 5 oom_kill events in StepId=6385206.0. Some of the step tasks have been OOM Killed.
+srun: error: gilbreth-n000: task 0: Out Of Memory
+slurmstepd: error: Detected 5 oom_kill events in StepId=6385206.batch. Some of the step tasks have been OOM Killed.

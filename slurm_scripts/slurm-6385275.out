@@ -1,0 +1,29 @@
+Cache directory for huggingface datasets:
+/scratch/gilbreth/ahmedb/cache/huggingface/datasets/cache
+gilbreth-n001.rcac.purdue.edu
+total tasks: 
+1
+total tasks per node: 
+1
+cpus per task: 
+12
+Cuda visible devices
+0
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/1.1.2
+/usr/bin/uuidgen: /home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/libuuid.so.1: no version information available (required by /usr/bin/uuidgen)
+training        : True
+num_proc        : 12
+preprocess      : False
+Filtering out sequences shorter than 5 sec.
+Traceback (most recent call last):
+  File "../scripts/preprocess_dataset.py", line 89, in <module>
+    preprocess_audioset(args)
+  File "../scripts/preprocess_dataset.py", line 47, in preprocess_audioset
+    os.makedirs(processed_dir)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/scratch/gilbreth/ahmedb/cache/huggingface/datasets/audioset/filtered/training'
+srun: error: gilbreth-n001: task 0: Exited with exit code 1

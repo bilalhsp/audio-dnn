@@ -1,0 +1,38 @@
+gilbreth-e008.rcac.purdue.edu
+total tasks: 
+1
+total tasks per node: 
+1
+cpus per task: 
+4
+Cuda visible devices
+0
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/1.1.2
+/usr/bin/uuidgen: /home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/libuuid.so.1: no version information available (required by /usr/bin/uuidgen)
+2024-07-20 20:54:41.483225: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-07-20 20:54:43.446198: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib:/apps/spack/gilbreth/apps/anaconda/2020.11-py38-gcc-4.8.5-djkvkvk/lib/python3.8/site-packages:/apps/spack/gilbreth/apps/anaconda/2020.11-py38-gcc-4.8.5-djkvkvk/lib/python3.8:/apps/spack/gilbreth/apps/anaconda/2020.11-py38-gcc-4.8.5-djkvkvk/lib:/usr/lib64
+2024-07-20 20:54:43.446656: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib:/apps/spack/gilbreth/apps/anaconda/2020.11-py38-gcc-4.8.5-djkvkvk/lib/python3.8/site-packages:/apps/spack/gilbreth/apps/anaconda/2020.11-py38-gcc-4.8.5-djkvkvk/lib/python3.8:/apps/spack/gilbreth/apps/anaconda/2020.11-py38-gcc-4.8.5-djkvkvk/lib:/usr/lib64
+2024-07-20 20:54:43.446674: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/huggingface_hub/utils/_deprecation.py:131: FutureWarning: 'Repository' (from 'huggingface_hub.repository') is deprecated and will be removed from version '1.0'. Please prefer the http-based alternatives instead. Given its large adoption in legacy code, the complete removal is only planned on next major release.
+For more details, please read https://huggingface.co/docs/huggingface_hub/concepts/git_vs_http.
+  warnings.warn(warning_message, FutureWarning)
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/ahmedb/.cache/huggingface/token
+Login successful
+Login to hub successful...!
+Traceback (most recent call last):
+  File "../scripts/pretrain_wav2vec2.py", line 148, in <module>
+    train_wav2vec2()
+  File "../scripts/pretrain_wav2vec2.py", line 61, in train_wav2vec2
+    repo = Repository(
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/huggingface_hub/utils/_deprecation.py", line 132, in inner_f
+    return f(*args, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'add_to_git_credential'
+srun: error: gilbreth-e008: task 0: Exited with exit code 1

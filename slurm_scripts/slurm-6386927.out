@@ -1,0 +1,14 @@
+gilbreth-c002.rcac.purdue.edu
+Total tasks: 2
+Total tasks per node: 2
+CPUs per task: 2
+CUDA visible devices: 0,1,2,3
+Number of nodes: 1
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/1.1.2
+/usr/bin/uuidgen: /home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/libuuid.so.1: no version information available (required by /usr/bin/uuidgen)
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 6386927.0 ON gilbreth-c002 CANCELLED AT 2024-07-21T11:37:32 ***
+slurmstepd: error: *** JOB 6386927 ON gilbreth-c002 CANCELLED AT 2024-07-21T11:37:32 ***

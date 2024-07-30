@@ -1,0 +1,196 @@
+gilbreth-c002.rcac.purdue.edu
+Total tasks: 2
+Total tasks per node: 2
+CPUs per task: 2
+CUDA visible devices: 0,1,2,3
+Number of nodes: 1
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/1.1.2
+Process rank: 0
+Local rank: 0
+World size: 2
+num_proc        : 2
+batch_size      : 16
+num_epochs      : 1
+Process rank: 1
+Local rank: 1
+World size: 2
+num_proc        : 2
+batch_size      : 16
+num_epochs      : 1
+gilbreth-c002:146507:146507 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
+gilbreth-c002:146507:146507 [0] NCCL INFO Bootstrap : Using ib0:172.18.36.32<0>
+gilbreth-c002:146507:146507 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+gilbreth-c002:146507:146507 [0] NCCL INFO cudaDriverVersion 12030
+NCCL version 2.20.5+cuda11.0
+gilbreth-c002:146508:146508 [1] NCCL INFO cudaDriverVersion 12030
+gilbreth-c002:146508:146508 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
+gilbreth-c002:146508:146508 [1] NCCL INFO Bootstrap : Using ib0:172.18.36.32<0>
+gilbreth-c002:146508:146508 [1] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+gilbreth-c002:146507:146558 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
+gilbreth-c002:146507:146558 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.18.36.32<0>
+gilbreth-c002:146507:146558 [0] NCCL INFO Using non-device net plugin version 0
+gilbreth-c002:146507:146558 [0] NCCL INFO Using network IB
+gilbreth-c002:146508:146561 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
+gilbreth-c002:146508:146561 [1] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.18.36.32<0>
+gilbreth-c002:146508:146561 [1] NCCL INFO Using non-device net plugin version 0
+gilbreth-c002:146508:146561 [1] NCCL INFO Using network IB
+gilbreth-c002:146507:146558 [0] NCCL INFO comm 0x55f4347a4660 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 61000 commId 0xffdecf19266dd864 - Init START
+gilbreth-c002:146508:146561 [1] NCCL INFO comm 0x555f6a968670 rank 1 nranks 2 cudaDev 1 nvmlDev 1 busId 62000 commId 0xffdecf19266dd864 - Init START
+gilbreth-c002:146507:146558 [0] NCCL INFO Setting affinity for GPU 0 to 03ff
+gilbreth-c002:146508:146561 [1] NCCL INFO Setting affinity for GPU 1 to 03ff
+gilbreth-c002:146507:146558 [0] NCCL INFO comm 0x55f4347a4660 rank 0 nRanks 2 nNodes 1 localRanks 2 localRank 0 MNNVL 0
+gilbreth-c002:146508:146561 [1] NCCL INFO comm 0x555f6a968670 rank 1 nRanks 2 nNodes 1 localRanks 2 localRank 1 MNNVL 0
+gilbreth-c002:146507:146558 [0] NCCL INFO Channel 00/04 :    0   1
+gilbreth-c002:146507:146558 [0] NCCL INFO Channel 01/04 :    0   1
+gilbreth-c002:146507:146558 [0] NCCL INFO Channel 02/04 :    0   1
+gilbreth-c002:146507:146558 [0] NCCL INFO Channel 03/04 :    0   1
+gilbreth-c002:146507:146558 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] -1/-1/-1->0->1 [2] 1/-1/-1->0->-1 [3] -1/-1/-1->0->1
+gilbreth-c002:146508:146561 [1] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] 0/-1/-1->1->-1 [2] -1/-1/-1->1->0 [3] 0/-1/-1->1->-1
+gilbreth-c002:146507:146558 [0] NCCL INFO P2P Chunksize set to 524288
+gilbreth-c002:146508:146561 [1] NCCL INFO P2P Chunksize set to 524288
+gilbreth-c002:146507:146558 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/IPC
+gilbreth-c002:146508:146561 [1] NCCL INFO Channel 00/0 : 1[1] -> 0[0] via P2P/IPC
+gilbreth-c002:146507:146558 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/IPC
+gilbreth-c002:146508:146561 [1] NCCL INFO Channel 01/0 : 1[1] -> 0[0] via P2P/IPC
+gilbreth-c002:146507:146558 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[1] via P2P/IPC
+gilbreth-c002:146508:146561 [1] NCCL INFO Channel 02/0 : 1[1] -> 0[0] via P2P/IPC
+gilbreth-c002:146507:146558 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[1] via P2P/IPC
+gilbreth-c002:146508:146561 [1] NCCL INFO Channel 03/0 : 1[1] -> 0[0] via P2P/IPC
+gilbreth-c002:146507:146558 [0] NCCL INFO Connected all rings
+gilbreth-c002:146507:146558 [0] NCCL INFO Connected all trees
+gilbreth-c002:146508:146561 [1] NCCL INFO Connected all rings
+gilbreth-c002:146508:146561 [1] NCCL INFO Connected all trees
+gilbreth-c002:146508:146561 [1] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+gilbreth-c002:146508:146561 [1] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 4 p2p channels per peer
+gilbreth-c002:146507:146558 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+gilbreth-c002:146507:146558 [0] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 4 p2p channels per peer
+gilbreth-c002:146507:146558 [0] NCCL INFO comm 0x55f4347a4660 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 61000 commId 0xffdecf19266dd864 - Init COMPLETE
+gilbreth-c002:146508:146561 [1] NCCL INFO comm 0x555f6a968670 rank 1 nranks 2 cudaDev 1 nvmlDev 1 busId 62000 commId 0xffdecf19266dd864 - Init COMPLETE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/ahmedb/.cache/huggingface/token
+Login successful
+Login to hub successful...!
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/ahmedb/.cache/huggingface/token
+Login successful
+Login to hub successful...!
+/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py:1494: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py:1494: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+Detected kernel version 3.10.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Starting training...!
+Starting training...!
+  0%|          | 0/20 [00:00<?, ?it/s][rank0]:[W reducer.cpp:1389] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank1]:[W reducer.cpp:1389] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+  5%|▌         | 1/20 [00:19<06:18, 19.92s/it] 10%|█         | 2/20 [00:26<03:40, 12.27s/it] 15%|█▌        | 3/20 [00:27<01:57,  6.89s/it] 20%|██        | 4/20 [00:34<01:49,  6.87s/it] 25%|██▌       | 5/20 [00:34<01:08,  4.57s/it] 30%|███       | 6/20 [00:41<01:17,  5.51s/it] 35%|███▌      | 7/20 [00:42<00:50,  3.89s/it] 40%|████      | 8/20 [00:49<01:00,  5.01s/it] 45%|████▌     | 9/20 [00:50<00:39,  3.59s/it] 50%|█████     | 10/20 [00:56<00:43,  4.30s/it] 55%|█████▌    | 11/20 [00:56<00:28,  3.13s/it] 60%|██████    | 12/20 [01:03<00:32,  4.08s/it] 65%|██████▌   | 13/20 [01:04<00:23,  3.31s/it] 70%|███████   | 14/20 [01:08<00:20,  3.35s/it] 75%|███████▌  | 15/20 [01:11<00:17,  3.47s/it] 80%|████████  | 16/20 [01:12<00:10,  2.72s/it] 85%|████████▌ | 17/20 [01:16<00:09,  3.13s/it] 90%|█████████ | 18/20 [01:17<00:04,  2.33s/it] 95%|█████████▌| 19/20 [01:17<00:01,  1.77s/it]100%|██████████| 20/20 [01:18<00:00,  1.39s/it]/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/huggingface_hub/hf_api.py:3664: UserWarning: Warnings while validating metadata in README.md:
+- empty or missing yaml metadata in repo card
+  warnings.warn(f"Warnings while validating metadata in README.md:\n{message}")
+
+  0%|          | 0/20 [00:00<?, ?it/s][A
+ 10%|█         | 2/20 [00:04<00:36,  2.02s/it][A
+ 15%|█▌        | 3/20 [00:04<00:20,  1.23s/it][A
+ 20%|██        | 4/20 [00:08<00:37,  2.31s/it][A
+ 25%|██▌       | 5/20 [00:08<00:23,  1.55s/it][A
+ 30%|███       | 6/20 [00:12<00:33,  2.38s/it][A
+ 35%|███▌      | 7/20 [00:12<00:21,  1.65s/it][A
+ 40%|████      | 8/20 [00:16<00:28,  2.36s/it][A
+ 45%|████▌     | 9/20 [00:16<00:18,  1.67s/it][A
+ 50%|█████     | 10/20 [00:20<00:23,  2.39s/it][A
+ 55%|█████▌    | 11/20 [00:20<00:15,  1.70s/it][A
+ 60%|██████    | 12/20 [00:24<00:18,  2.34s/it][A
+ 65%|██████▌   | 13/20 [00:24<00:11,  1.67s/it][A
+ 70%|███████   | 14/20 [00:29<00:15,  2.51s/it][A
+ 75%|███████▌  | 15/20 [00:29<00:08,  1.79s/it][A
+ 80%|████████  | 16/20 [00:33<00:09,  2.48s/it][A
+ 85%|████████▌ | 17/20 [00:33<00:05,  1.77s/it][A
+ 90%|█████████ | 18/20 [00:33<00:02,  1.29s/it][A
+ 95%|█████████▌| 19/20 [00:33<00:00,  1.07it/s][A
+100%|██████████| 20/20 [00:33<00:00,  1.39it/s][A                                               
+                                               [A{'eval_runtime': 42.9644, 'eval_samples_per_second': 14.896, 'eval_steps_per_second': 0.466, 'epoch': 1.0}
+100%|██████████| 20/20 [02:04<00:00,  1.39s/it]
+100%|██████████| 20/20 [00:33<00:00,  1.39it/s][A
+                                               [A[rank1]: Traceback (most recent call last):
+[rank1]:   File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/trainer.py", line 2889, in _save_checkpoint
+[rank1]:     metric_value = metrics[metric_to_check]
+[rank1]: KeyError: 'eval_loss'
+
+[rank1]: The above exception was the direct cause of the following exception:
+
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "../scripts/pretrain_wav2vec2.py", line 151, in <module>
+[rank1]:     train_wav2vec2(args)
+[rank1]:   File "../scripts/pretrain_wav2vec2.py", line 108, in train_wav2vec2
+[rank1]:     trainer.train()
+[rank1]:   File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/trainer.py", line 1923, in train
+[rank1]:     return inner_training_loop(
+[rank1]:   File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/trainer.py", line 2365, in _inner_training_loop
+[rank1]:     self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+[rank1]:   File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/trainer.py", line 2796, in _maybe_log_save_evaluate
+[rank1]:     self._save_checkpoint(model, trial, metrics=metrics)
+[rank1]:   File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/trainer.py", line 2891, in _save_checkpoint
+[rank1]:     raise KeyError(
+[rank1]: KeyError: "The `metric_for_best_model` training argument is set to 'eval_loss', which is not found in the evaluation metrics. The available evaluation metrics are: ['eval_runtime', 'eval_samples_per_second', 'eval_steps_per_second', 'epoch']. Consider changing the `metric_for_best_model` via the TrainingArguments."
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/trainer.py", line 2889, in _save_checkpoint
+[rank0]:     metric_value = metrics[metric_to_check]
+[rank0]: KeyError: 'eval_loss'
+
+[rank0]: The above exception was the direct cause of the following exception:
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "../scripts/pretrain_wav2vec2.py", line 151, in <module>
+[rank0]:     train_wav2vec2(args)
+[rank0]:   File "../scripts/pretrain_wav2vec2.py", line 108, in train_wav2vec2
+[rank0]:     trainer.train()
+[rank0]:   File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/trainer.py", line 1923, in train
+[rank0]:     return inner_training_loop(
+[rank0]:   File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/trainer.py", line 2365, in _inner_training_loop
+[rank0]:     self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+[rank0]:   File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/trainer.py", line 2796, in _maybe_log_save_evaluate
+[rank0]:     self._save_checkpoint(model, trial, metrics=metrics)
+[rank0]:   File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/trainer.py", line 2891, in _save_checkpoint
+[rank0]:     raise KeyError(
+[rank0]: KeyError: "The `metric_for_best_model` training argument is set to 'eval_loss', which is not found in the evaluation metrics. The available evaluation metrics are: ['eval_runtime', 'eval_samples_per_second', 'eval_steps_per_second', 'epoch']. Consider changing the `metric_for_best_model` via the TrainingArguments."
+100%|██████████| 20/20 [02:07<00:00,  6.35s/it]
+E0721 17:13:37.125219 47219068571328 torch/distributed/elastic/multiprocessing/api.py:826] failed (exitcode: 1) local_rank: 0 (pid: 146507) of binary: /home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/bin/python
+Traceback (most recent call last):
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 347, in wrapper
+    return f(*args, **kwargs)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/run.py", line 879, in main
+    run(args)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/run.py", line 870, in run
+    elastic_launch(
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 132, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 263, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+../scripts/pretrain_wav2vec2.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2024-07-21_17:13:37
+  host      : gilbreth-c002.rcac.purdue.edu
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 146508)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-07-21_17:13:37
+  host      : gilbreth-c002.rcac.purdue.edu
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 146507)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

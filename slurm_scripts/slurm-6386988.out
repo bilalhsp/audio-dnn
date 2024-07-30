@@ -1,0 +1,120 @@
+gilbreth-c002.rcac.purdue.edu
+Total tasks: 4
+Total tasks per node: 4
+CPUs per task: 2
+CUDA visible devices: 0,1,2,3
+Number of nodes: 1
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/1.1.2
+/usr/bin/uuidgen: /home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/libuuid.so.1: no version information available (required by /usr/bin/uuidgen)
+num_proc        : 2
+Process rank: 0
+World size: 4
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/ahmedb/.cache/huggingface/token
+Login successful
+Login to hub successful...!
+/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py:1494: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+Traceback (most recent call last):
+  File "../scripts/pretrain_wav2vec2.py", line 133, in <module>
+    train_wav2vec2(args)
+  File "../scripts/pretrain_wav2vec2.py", line 62, in train_wav2vec2
+    training_args = TrainingArguments(
+  File "<string>", line 129, in __init__
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py", line 1693, in __post_init__
+    self.device
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py", line 2171, in device
+    return self._setup_devices
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/utils/generic.py", line 60, in __get__
+    cached = self.fget(obj)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py", line 2108, in _setup_devices
+    self.distributed_state = PartialState(**accelerator_state_kwargs)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/accelerate/state.py", line 184, in __init__
+    raise ValueError(f"Your assigned backend {original_backend} is not avaliable, please use {backend}")
+ValueError: Your assigned backend nccl is not avaliable, please use gloo
+/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py:1494: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+num_proc        : 2
+Process rank: 0
+World size: 4
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/ahmedb/.cache/huggingface/token
+Login successful
+Login to hub successful...!
+Traceback (most recent call last):
+  File "../scripts/pretrain_wav2vec2.py", line 133, in <module>
+    train_wav2vec2(args)
+  File "../scripts/pretrain_wav2vec2.py", line 62, in train_wav2vec2
+    training_args = TrainingArguments(
+  File "<string>", line 129, in __init__
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py", line 1693, in __post_init__
+    self.device
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py", line 2171, in device
+    return self._setup_devices
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/utils/generic.py", line 60, in __get__
+    cached = self.fget(obj)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py", line 2108, in _setup_devices
+    self.distributed_state = PartialState(**accelerator_state_kwargs)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/accelerate/state.py", line 184, in __init__
+    raise ValueError(f"Your assigned backend {original_backend} is not avaliable, please use {backend}")
+ValueError: Your assigned backend nccl is not avaliable, please use gloo
+num_proc        : 2
+Process rank: 0
+World size: 4
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/ahmedb/.cache/huggingface/token
+Login successful
+Login to hub successful...!
+/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py:1494: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+Traceback (most recent call last):
+  File "../scripts/pretrain_wav2vec2.py", line 133, in <module>
+    train_wav2vec2(args)
+  File "../scripts/pretrain_wav2vec2.py", line 62, in train_wav2vec2
+    training_args = TrainingArguments(
+  File "<string>", line 129, in __init__
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py", line 1693, in __post_init__
+    self.device
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py", line 2171, in device
+    return self._setup_devices
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/utils/generic.py", line 60, in __get__
+    cached = self.fget(obj)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py", line 2108, in _setup_devices
+    self.distributed_state = PartialState(**accelerator_state_kwargs)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/accelerate/state.py", line 184, in __init__
+    raise ValueError(f"Your assigned backend {original_backend} is not avaliable, please use {backend}")
+ValueError: Your assigned backend nccl is not avaliable, please use gloo
+/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py:1494: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+num_proc        : 2
+Process rank: 0
+World size: 4
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/ahmedb/.cache/huggingface/token
+Login successful
+Login to hub successful...!
+Traceback (most recent call last):
+  File "../scripts/pretrain_wav2vec2.py", line 133, in <module>
+    train_wav2vec2(args)
+  File "../scripts/pretrain_wav2vec2.py", line 62, in train_wav2vec2
+    training_args = TrainingArguments(
+  File "<string>", line 129, in __init__
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py", line 1693, in __post_init__
+    self.device
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py", line 2171, in device
+    return self._setup_devices
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/utils/generic.py", line 60, in __get__
+    cached = self.fget(obj)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py", line 2108, in _setup_devices
+    self.distributed_state = PartialState(**accelerator_state_kwargs)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/accelerate/state.py", line 184, in __init__
+    raise ValueError(f"Your assigned backend {original_backend} is not avaliable, please use {backend}")
+ValueError: Your assigned backend nccl is not avaliable, please use gloo
+srun: error: gilbreth-c002: tasks 0-3: Exited with exit code 1

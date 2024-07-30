@@ -1,0 +1,14 @@
+gilbreth-c001.rcac.purdue.edu
+Total tasks: 8
+Total tasks per node: 4
+CPUs per task: 4
+CUDA visible devices: 0,1,2,3
+Number of nodes: 2
+SLURM_NODEID: 0
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/1.1.2
+MASTER_ADDR: gilbreth-c001
+MASTER_PORT: 12345
+slurmstepd: error: *** JOB 6408464 ON gilbreth-c001 CANCELLED AT 2024-07-27T14:16:00 ***

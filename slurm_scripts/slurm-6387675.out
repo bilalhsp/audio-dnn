@@ -1,0 +1,93 @@
+gilbreth-c002.rcac.purdue.edu
+Total tasks: 2
+Total tasks per node: 2
+CPUs per task: 2
+CUDA visible devices: 0,1,2,3
+Number of nodes: 1
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/1.1.2
+Process rank: 0
+Local rank: 0
+World size: 2
+num_proc        : 2
+batch_size      : 16
+num_epochs      : 1
+Process rank: 1
+Local rank: 1
+World size: 2
+num_proc        : 2
+batch_size      : 16
+num_epochs      : 1
+gilbreth-c002:147586:147586 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
+gilbreth-c002:147586:147586 [0] NCCL INFO Bootstrap : Using ib0:172.18.36.32<0>
+gilbreth-c002:147586:147586 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+gilbreth-c002:147586:147586 [0] NCCL INFO cudaDriverVersion 12030
+NCCL version 2.20.5+cuda11.0
+gilbreth-c002:147586:147624 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
+gilbreth-c002:147586:147624 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.18.36.32<0>
+gilbreth-c002:147586:147624 [0] NCCL INFO Using non-device net plugin version 0
+gilbreth-c002:147586:147624 [0] NCCL INFO Using network IB
+gilbreth-c002:147587:147587 [1] NCCL INFO cudaDriverVersion 12030
+gilbreth-c002:147587:147587 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
+gilbreth-c002:147587:147587 [1] NCCL INFO Bootstrap : Using ib0:172.18.36.32<0>
+gilbreth-c002:147587:147587 [1] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+gilbreth-c002:147587:147630 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ^docker,eth,lo
+gilbreth-c002:147587:147630 [1] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.18.36.32<0>
+gilbreth-c002:147587:147630 [1] NCCL INFO Using non-device net plugin version 0
+gilbreth-c002:147587:147630 [1] NCCL INFO Using network IB
+gilbreth-c002:147586:147624 [0] NCCL INFO comm 0x55e8bd7eb820 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 61000 commId 0x791a993bf552bfdf - Init START
+gilbreth-c002:147587:147630 [1] NCCL INFO comm 0x55d860f95d00 rank 1 nranks 2 cudaDev 1 nvmlDev 1 busId 62000 commId 0x791a993bf552bfdf - Init START
+gilbreth-c002:147586:147624 [0] NCCL INFO Setting affinity for GPU 0 to 03ff
+gilbreth-c002:147587:147630 [1] NCCL INFO Setting affinity for GPU 1 to 03ff
+gilbreth-c002:147586:147624 [0] NCCL INFO comm 0x55e8bd7eb820 rank 0 nRanks 2 nNodes 1 localRanks 2 localRank 0 MNNVL 0
+gilbreth-c002:147586:147624 [0] NCCL INFO Channel 00/04 :    0   1
+gilbreth-c002:147586:147624 [0] NCCL INFO Channel 01/04 :    0   1
+gilbreth-c002:147587:147630 [1] NCCL INFO comm 0x55d860f95d00 rank 1 nRanks 2 nNodes 1 localRanks 2 localRank 1 MNNVL 0
+gilbreth-c002:147586:147624 [0] NCCL INFO Channel 02/04 :    0   1
+gilbreth-c002:147586:147624 [0] NCCL INFO Channel 03/04 :    0   1
+gilbreth-c002:147586:147624 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] -1/-1/-1->0->1 [2] 1/-1/-1->0->-1 [3] -1/-1/-1->0->1
+gilbreth-c002:147586:147624 [0] NCCL INFO P2P Chunksize set to 524288
+gilbreth-c002:147587:147630 [1] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] 0/-1/-1->1->-1 [2] -1/-1/-1->1->0 [3] 0/-1/-1->1->-1
+gilbreth-c002:147587:147630 [1] NCCL INFO P2P Chunksize set to 524288
+gilbreth-c002:147586:147624 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/IPC
+gilbreth-c002:147586:147624 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/IPC
+gilbreth-c002:147587:147630 [1] NCCL INFO Channel 00/0 : 1[1] -> 0[0] via P2P/IPC
+gilbreth-c002:147586:147624 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[1] via P2P/IPC
+gilbreth-c002:147587:147630 [1] NCCL INFO Channel 01/0 : 1[1] -> 0[0] via P2P/IPC
+gilbreth-c002:147586:147624 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[1] via P2P/IPC
+gilbreth-c002:147587:147630 [1] NCCL INFO Channel 02/0 : 1[1] -> 0[0] via P2P/IPC
+gilbreth-c002:147587:147630 [1] NCCL INFO Channel 03/0 : 1[1] -> 0[0] via P2P/IPC
+gilbreth-c002:147586:147624 [0] NCCL INFO Connected all rings
+gilbreth-c002:147586:147624 [0] NCCL INFO Connected all trees
+gilbreth-c002:147587:147630 [1] NCCL INFO Connected all rings
+gilbreth-c002:147586:147624 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+gilbreth-c002:147586:147624 [0] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 4 p2p channels per peer
+gilbreth-c002:147587:147630 [1] NCCL INFO Connected all trees
+gilbreth-c002:147587:147630 [1] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+gilbreth-c002:147587:147630 [1] NCCL INFO 4 coll channels, 0 collnet channels, 0 nvls channels, 4 p2p channels, 4 p2p channels per peer
+gilbreth-c002:147586:147624 [0] NCCL INFO comm 0x55e8bd7eb820 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 61000 commId 0x791a993bf552bfdf - Init COMPLETE
+gilbreth-c002:147587:147630 [1] NCCL INFO comm 0x55d860f95d00 rank 1 nranks 2 cudaDev 1 nvmlDev 1 busId 62000 commId 0x791a993bf552bfdf - Init COMPLETE
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/ahmedb/.cache/huggingface/token
+Login successful
+Login to hub successful...!
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/ahmedb/.cache/huggingface/token
+Login successful
+Login to hub successful...!
+/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py:1494: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py:1494: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+Detected kernel version 3.10.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+computing evaluation...!
+computing evaluation...!
+  0%|          | 0/20 [00:00<?, ?it/s] 10%|█         | 2/20 [00:06<01:01,  3.40s/it] 15%|█▌        | 3/20 [00:06<00:34,  2.03s/it] 20%|██        | 4/20 [00:17<01:24,  5.26s/it] 25%|██▌       | 5/20 [00:17<00:52,  3.47s/it] 30%|███       | 6/20 [00:22<00:55,  3.97s/it] 35%|███▌      | 7/20 [00:22<00:35,  2.73s/it] 40%|████      | 8/20 [00:26<00:35,  2.93s/it] 45%|████▌     | 9/20 [00:26<00:22,  2.06s/it] 50%|█████     | 10/20 [00:32<00:33,  3.40s/it] 55%|█████▌    | 11/20 [00:36<00:31,  3.55s/it] 60%|██████    | 12/20 [00:38<00:24,  3.02s/it] 65%|██████▌   | 13/20 [00:42<00:23,  3.40s/it] 70%|███████   | 14/20 [00:42<00:14,  2.41s/it] 75%|███████▌  | 15/20 [00:46<00:13,  2.76s/it] 80%|████████  | 16/20 [00:46<00:07,  1.97s/it]{'eval_runtime': 70.3666, 'eval_samples_per_second': 9.095, 'eval_steps_per_second': 0.284}
+It took 1.3 min. to run.
+ 85%|████████▌ | 17/20 [00:52<00:09,  3.04s/it] 90%|█████████ | 18/20 [00:52<00:04,  2.16s/it] 95%|█████████▌| 19/20 [00:52<00:01,  1.57s/it]100%|██████████| 20/20 [00:52<00:00,  1.15s/it]100%|██████████| 20/20 [00:52<00:00,  2.63s/it]
+{'eval_runtime': 70.888, 'eval_samples_per_second': 9.028, 'eval_steps_per_second': 0.282}
+It took 1.3 min. to run.

@@ -1,0 +1,26 @@
+gilbreth-c002.rcac.purdue.edu
+Total tasks: 4
+Total tasks per node: 4
+CPUs per task: 2
+CUDA visible devices: 0,1,2,3
+Number of nodes: 1
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/1.1.2
+num_proc        : 2
+Process rank: 1
+World size: 4
+It took 0.0 min. to run.
+num_proc        : 2
+Process rank: 2
+World size: 4
+It took 0.0 min. to run.
+num_proc        : 2
+Process rank: 3
+World size: 4
+It took 0.0 min. to run.
+num_proc        : 2
+Process rank: 0
+World size: 4
+It took 0.0 min. to run.

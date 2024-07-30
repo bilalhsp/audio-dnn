@@ -1,0 +1,136 @@
+gilbreth-c002.rcac.purdue.edu
+Total tasks: 4
+Total tasks per node: 4
+CPUs per task: 2
+CUDA visible devices: 0,1,2,3
+Number of nodes: 1
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/1.1.2
+/usr/bin/uuidgen: /home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/libuuid.so.1: no version information available (required by /usr/bin/uuidgen)
+/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py:1494: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+num_proc        : 2
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/ahmedb/.cache/huggingface/token
+Login successful
+Login to hub successful...!
+Traceback (most recent call last):
+  File "../scripts/pretrain_wav2vec2.py", line 116, in <module>
+    train_wav2vec2(args)
+  File "../scripts/pretrain_wav2vec2.py", line 48, in train_wav2vec2
+    training_args = TrainingArguments(
+  File "<string>", line 129, in __init__
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py", line 1693, in __post_init__
+    self.device
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py", line 2171, in device
+    return self._setup_devices
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/utils/generic.py", line 60, in __get__
+    cached = self.fget(obj)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py", line 2108, in _setup_devices
+    self.distributed_state = PartialState(**accelerator_state_kwargs)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/accelerate/state.py", line 275, in __init__
+    self.num_processes = torch.distributed.get_world_size()
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 1769, in get_world_size
+    return _get_group_size(group)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 841, in _get_group_size
+    default_pg = _get_default_group()
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 1008, in _get_default_group
+    raise ValueError(
+ValueError: Default process group has not been initialized, please make sure to call init_process_group.
+/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py:1494: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+num_proc        : 2
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/ahmedb/.cache/huggingface/token
+Login successful
+Login to hub successful...!
+Traceback (most recent call last):
+  File "../scripts/pretrain_wav2vec2.py", line 116, in <module>
+    train_wav2vec2(args)
+  File "../scripts/pretrain_wav2vec2.py", line 48, in train_wav2vec2
+    training_args = TrainingArguments(
+  File "<string>", line 129, in __init__
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py", line 1693, in __post_init__
+    self.device
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py", line 2171, in device
+    return self._setup_devices
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/utils/generic.py", line 60, in __get__
+    cached = self.fget(obj)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py", line 2108, in _setup_devices
+    self.distributed_state = PartialState(**accelerator_state_kwargs)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/accelerate/state.py", line 275, in __init__
+    self.num_processes = torch.distributed.get_world_size()
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 1769, in get_world_size
+    return _get_group_size(group)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 841, in _get_group_size
+    default_pg = _get_default_group()
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 1008, in _get_default_group
+    raise ValueError(
+ValueError: Default process group has not been initialized, please make sure to call init_process_group.
+num_proc        : 2
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/ahmedb/.cache/huggingface/token
+Login successful
+Login to hub successful...!
+/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py:1494: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+Traceback (most recent call last):
+  File "../scripts/pretrain_wav2vec2.py", line 116, in <module>
+    train_wav2vec2(args)
+  File "../scripts/pretrain_wav2vec2.py", line 48, in train_wav2vec2
+    training_args = TrainingArguments(
+  File "<string>", line 129, in __init__
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py", line 1693, in __post_init__
+    self.device
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py", line 2171, in device
+    return self._setup_devices
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/utils/generic.py", line 60, in __get__
+    cached = self.fget(obj)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py", line 2108, in _setup_devices
+    self.distributed_state = PartialState(**accelerator_state_kwargs)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/accelerate/state.py", line 275, in __init__
+    self.num_processes = torch.distributed.get_world_size()
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 1769, in get_world_size
+    return _get_group_size(group)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 841, in _get_group_size
+    default_pg = _get_default_group()
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 1008, in _get_default_group
+    raise ValueError(
+ValueError: Default process group has not been initialized, please make sure to call init_process_group.
+num_proc        : 2
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: fineGrained).
+Your token has been saved to /home/ahmedb/.cache/huggingface/token
+Login successful
+Login to hub successful...!
+/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py:1494: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+Traceback (most recent call last):
+  File "../scripts/pretrain_wav2vec2.py", line 116, in <module>
+    train_wav2vec2(args)
+  File "../scripts/pretrain_wav2vec2.py", line 48, in train_wav2vec2
+    training_args = TrainingArguments(
+  File "<string>", line 129, in __init__
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py", line 1693, in __post_init__
+    self.device
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py", line 2171, in device
+    return self._setup_devices
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/utils/generic.py", line 60, in __get__
+    cached = self.fget(obj)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/transformers/training_args.py", line 2108, in _setup_devices
+    self.distributed_state = PartialState(**accelerator_state_kwargs)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/accelerate/state.py", line 275, in __init__
+    self.num_processes = torch.distributed.get_world_size()
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 1769, in get_world_size
+    return _get_group_size(group)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 841, in _get_group_size
+    default_pg = _get_default_group()
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/torch/distributed/distributed_c10d.py", line 1008, in _get_default_group
+    raise ValueError(
+ValueError: Default process group has not been initialized, please make sure to call init_process_group.
+srun: error: gilbreth-c002: tasks 0-3: Exited with exit code 1

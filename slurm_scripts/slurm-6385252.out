@@ -1,0 +1,23 @@
+Cache directory for huggingface datasets:
+/scratch/gilbreth/ahmedb/cache/huggingface/datasets/cache
+gilbreth-n000.rcac.purdue.edu
+total tasks: 
+1
+total tasks per node: 
+1
+cpus per task: 
+8
+Cuda visible devices
+0
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/1.1.2
+/usr/bin/uuidgen: /home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/libuuid.so.1: no version information available (required by /usr/bin/uuidgen)
+training        : True
+num_proc        : 8
+preprocess      : False
+Filtering out sequences shorter than 5 sec.
+Saving the dataset (0/1066 shards):   0%|          | 0/281099 [00:00<?, ? examples/s]Saving the dataset (0/1066 shards):   0%|          | 264/281099 [04:50<85:47:35,  1.10s/ examples]Saving the dataset (1/1066 shards):   0%|          | 264/281099 [04:50<85:47:35,  1.10s/ examples]Saving the dataset (2/1066 shards):   0%|          | 528/281099 [04:50<85:42:45,  1.10s/ examples]Saving the dataset (2/1066 shards):   0%|          | 792/281099 [04:50<22:12:42,  3.51 examples/s]Saving the dataset (3/1066 shards):   0%|          | 792/281099 [04:50<22:12:42,  3.51 examples/s]Saving the dataset (4/1066 shards):   0%|          | 1056/281099 [04:50<22:11:27,  3.51 examples/s]Saving the dataset (4/1066 shards):   0%|          | 1320/281099 [04:50<10:48:30,  7.19 examples/s]Saving the dataset (5/1066 shards):   0%|          | 1320/281099 [04:50<10:48:30,  7.19 examples/s]Saving the dataset (6/1066 shards):   1%|          | 1584/281099 [04:52<10:47:53,  7.19 examples/s]Saving the dataset (6/1066 shards):   1%| srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+         | 1848/281099 [04:53<6:23:59, 12.12 examples/s] Saving the dataset (7/1066 shards):   1%|          | 1848/281099 [04:53<6:23:59, 12.12 examples/s]Saving the dataset (7/1066 shards):   1%|          | 2112/281099 [04:56<5:03:51, 15.30 examples/s]Saving the dataset (8/1066 shards):   1%|          | 2112/281099 [04:56<5:03:51, 15.30 examples/s]Saving the dataset (8/1066 shards):   1%|          | 2112/281099 [05:09<5:03:51, 15.30 examples/s]slurmstepd: error: *** STEP 6385252.0 ON gilbreth-n000 CANCELLED AT 2024-07-20T14:29:36 ***
+slurmstepd: error: *** JOB 6385252 ON gilbreth-n000 CANCELLED AT 2024-07-20T14:29:36 ***

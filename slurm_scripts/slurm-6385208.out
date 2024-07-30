@@ -1,0 +1,30 @@
+Cache directory for huggingface datasets:
+/scratch/gilbreth/ahmedb/cache/huggingface/datasets/cache
+gilbreth-n000.rcac.purdue.edu
+total tasks: 
+1
+total tasks per node: 
+1
+cpus per task: 
+8
+Cuda visible devices
+0
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) xalt/1.1.2
+/usr/bin/uuidgen: /home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/libuuid.so.1: no version information available (required by /usr/bin/uuidgen)
+training        : False
+num_proc        : 8
+preprocess      : False
+Filtering out sequences shorter than 5 sec.
+Filter:   0%|          | 0/8491 [00:00<?, ? examples/s]Filter:  12%|█▏        | 1000/8491 [02:19<17:23,  7.18 examples/s]Filter:  24%|██▎       | 2000/8491 [04:37<15:00,  7.20 examples/s]Filter:  35%|███▌      | 3000/8491 [06:59<12:50,  7.13 examples/s]Filter:  47%|████▋     | 4000/8491 [09:23<10:36,  7.06 examples/s]Filter:  59%|█████▉    | 5000/8491 [11:46<08:15,  7.04 examples/s]Filter:  71%|███████   | 6000/8491 [14:08<05:53,  7.04 examples/s]Filter:  82%|████████▏ | 7000/8491 [16:30<03:32,  7.03 examples/s]Filter:  94%|█████████▍| 8000/8491 [18:53<01:09,  7.03 examples/s]Filter: 100%|██████████| 8491/8491 [20:02<00:00,  7.03 examples/s]Filter: 100%|██████████| 8491/8491 [20:02<00:00,  7.06 examples/s]
+Traceback (most recent call last):
+  File "../scripts/preprocess_dataset.py", line 89, in <module>
+    preprocess_audioset(args)
+  File "../scripts/preprocess_dataset.py", line 48, in preprocess_audioset
+    dataset.save_to_disk(processed_dir, num_proc=num_proc)
+  File "/home/ahmedb/.conda/envs/cent7/2020.11-py38/wav2letter/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 1528, in save_to_disk
+    raise PermissionError(
+PermissionError: Tried to overwrite /scratch/gilbreth/ahmedb/cache/huggingface/datasets/audioset/processed/test but a dataset can't overwrite itself.
+srun: error: gilbreth-n000: task 0: Exited with exit code 1
