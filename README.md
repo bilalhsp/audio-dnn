@@ -15,7 +15,7 @@ specified in the [wav2vec2 paper](https://arxiv.org/abs/2006.11477).
 - 🗂️ [Directory Structure](#directory-structure-🗂️)
 - 🔧 [Installation](#installation-🔧)
 - 📄 [Configuration](#configuration-📄)
-- 🚀 [Usage](#usage-🚀)
+- 🚀 [Usage](#usage)
 - 📜 [License](#license-📜)
 - 📚 [References](#references-📚)
 
