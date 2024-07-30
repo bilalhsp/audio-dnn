@@ -12,7 +12,7 @@ specified in the [wav2vec2 paper](https://arxiv.org/abs/2006.11477).
 
 ## Table of Contents
 - ⚙️ [Features](#features-⚙️)
-- 🗂️ [Directory Structure](#directory-structure-🗂️)
+- 🗂️ [Directory Structure](#directory-structure🗂️)
 - 🔧 [Installation](#installation-🔧)
 - 📄 [Configuration](#configuration-📄)
 - 🚀 [Usage](#usage)
@@ -26,7 +26,8 @@ specified in the [wav2vec2 paper](https://arxiv.org/abs/2006.11477).
   [audioset-utils](https://github.com/bilalhsp/audioset-utils.git) for working with 
   Audioset metadata.
 
-## Directory Structure 🗂️
+## Directory Structure🗂️ 
+
 ```plaintext
 audio-dnn
 ├── audio_dnn
