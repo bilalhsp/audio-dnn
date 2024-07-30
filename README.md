@@ -11,13 +11,13 @@ specified in the [wav2vec2 paper](https://arxiv.org/abs/2006.11477).
 
 
 ## Table of Contents
-- ⚙️ [Features](#features)
-- 🗂️ [Directory Structure](#directory-structure)
-- 📦 [Installation](#installation)
-- 📄 [Configuration](#configuration)
-- 🚀 [Usage](#usage)
-- 📄 [License](#license)
-- 📚 [References](#references)
+- ⚙️ [Features](#features-⚙️)
+- 🗂️ [Directory Structure](#directory-structure-🗂️)
+- 🔧 [Installation](#installation-🔧)
+- 📄 [Configuration](#configuration-📄)
+- 🚀 [Usage](#usage-🚀)
+- 📜 [License](#license-📜)
+- 📚 [References](#references-📚)
 
 ## Features ⚙️
 - Pretraining [wav2vec2](https://arxiv.org/abs/2006.11477) model using natural sounds extracted from [Audioset](https://research.google.com/audioset/index.html) dataset.
@@ -61,7 +61,7 @@ audio-dnn
   for managing job submissions in environments using the SLURM workload  
   manager.  
 
-## Installation 📦
+## Installation 🔧
 
 To use this repository, follow these steps:
 
@@ -125,7 +125,7 @@ To get started with the audio-dnn package, follow these steps:
 
 Now you are ready to use the audio-dnn package for your audio processing tasks!
 
-## License 📄
+## License 📜
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
